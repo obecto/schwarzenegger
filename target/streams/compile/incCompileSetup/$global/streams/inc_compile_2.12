@@ -1,0 +1,607 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\target\scala-2.12\classes
+compile options:
+0 items
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.12.2
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+9 items
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\target\scala-2.12\classes\com\obecto\Communicator$$anonfun$receive$1.class
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\target\scala-2.12\classes\com\obecto\Communicator$.class
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\target\scala-2.12\classes\com\obecto\Communicator.class
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\target\scala-2.12\classes\com\obecto\Routes$.class
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\target\scala-2.12\classes\com\obecto\Routes.class
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\target\scala-2.12\classes\com\obecto\WebServer$$anonfun$1.class
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\target\scala-2.12\classes\com\obecto\WebServer$.class
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\target\scala-2.12\classes\com\obecto\WebServer$delayedInit$body.class
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\target\scala-2.12\classes\com\obecto\WebServer.class
+binary dependencies:
+21 items
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-actor_2.12\jars\akka-actor_2.12-2.5.2.jar
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-http-core_2.12\jars\akka-http-core_2.12-10.0.7.jar
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-stream_2.12\jars\akka-stream_2.12-2.5.2.jar
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> C:\Users\gbarn_000\.ivy2\cache\io.spray\spray-json_2.12\bundles\spray-json_2.12-1.3.3.jar
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> C:\Users\gbarn_000\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.2.jar
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-actor_2.12\jars\akka-actor_2.12-2.5.2.jar
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-http-spray-json_2.12\jars\akka-http-spray-json_2.12-10.0.7.jar
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-http_2.12\jars\akka-http_2.12-10.0.7.jar
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> C:\Users\gbarn_000\.ivy2\cache\io.spray\spray-json_2.12\bundles\spray-json_2.12-1.3.3.jar
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> C:\Users\gbarn_000\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.2.jar
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-actor_2.12\jars\akka-actor_2.12-2.5.2.jar
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-http-core_2.12\jars\akka-http-core_2.12-10.0.7.jar
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-http-spray-json_2.12\jars\akka-http-spray-json_2.12-10.0.7.jar
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-http_2.12\jars\akka-http_2.12-10.0.7.jar
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-stream_2.12\jars\akka-stream_2.12-2.5.2.jar
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> C:\Users\gbarn_000\.ivy2\cache\com.typesafe\config\bundles\config-1.3.1.jar
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> C:\Users\gbarn_000\.ivy2\cache\io.spray\spray-json_2.12\bundles\spray-json_2.12-1.3.3.jar
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> C:\Users\gbarn_000\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.2.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+4 items
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+9 items
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> com.obecto.Communicator
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> com.obecto.Communicator$
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> com.obecto.Communicator$$anonfun$receive$1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> com.obecto.Routes
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> com.obecto.Routes$
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> com.obecto.WebServer
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> com.obecto.WebServer$
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> com.obecto.WebServer$$anonfun$1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> com.obecto.WebServer$delayedInit$body
+used names:
+457 items
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> !=
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> <init>
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> <repeated>
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> A
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> A1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> AbstractPartialFunction
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Actor
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> ActorContext
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> ActorMaterializer
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> ActorMaterializerSettings
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> ActorRefFactory
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> ActorSystem
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Any
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> AnyRef
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> B1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> BasicHttpCredentials
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Boolean
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Class
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> ClassTag
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Communicator
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> ConnectionPoolSettings
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Content-Type
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> ContentType
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> ContentTypes
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Failure
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Function1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Future
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> HTTP$div1$u002E1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> HTTP/1.1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Http
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> HttpEntity
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> HttpExt
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> HttpHeader
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> HttpMethod
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> HttpMethods
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> HttpProtocol
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> HttpProtocols
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> HttpRequest
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> HttpResponse
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> HttpsConnectionContext
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> JsObject
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> JsValue
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> List
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> LogSource
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Logging
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> LoggingAdapter
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Map
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Materializer
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> MediaType
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> MediaTypes
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> MessageHeaders
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> NonBinary
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Nothing
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Object
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> POST
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Predef
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Props
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> RawHeader
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> RequestEntity
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Seq
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Strict
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> String
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> StringContext
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Success
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> System
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> T
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> T0
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Unit
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> Uri
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> WithFixedCharset
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> _$7
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> actor
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> akka
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> api
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> application$divjson
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> application/json
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> apply
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> asInstanceOf
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> asJsObject
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> collection
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> com
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> concurrent
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> context
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> event
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> eventFields
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> fbAccessToken
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> fbVerifyToken
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> fields
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> fromActor
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> getenv
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> handleEvent
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> header
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> headers
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> http
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> immutable
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> info
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> internal
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> isInstanceOf
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> java
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> javadsl
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> json
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> lang
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> log
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> materializeClassTag
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> materializer
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> message
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> model
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> obecto
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> package
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> prettyPrint
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> previousMessageText
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> printf
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> receivedMessage
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> recipientId
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> reflect
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> s
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> scala
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> scaladsl
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> sendMessageBack
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> sender
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> senderId
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> singleRequest
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> spray
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> stream
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> sun
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> system
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> text
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> timeOfMessage
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> toString
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> unchecked
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> util
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> ws
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> x$1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> x$2
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> x$3
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> x$4
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> x$5
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> xml
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> !
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> <byname>
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> <init>
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> <refinement>
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> ==
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> A
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> ActorRef
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Any
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> AnyRef
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> AppendOne
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> ApplyConverter
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Aux
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> BinaryPolyFunc
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Boolean
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Case
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Communicator
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> ConvertParamDefAndConcatenate
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> DefaultJsonProtocol
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Directive
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Directive0
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Directive1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Directives
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Fold
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> FoldLeft
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> FromEntityUnmarshaller
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> FromMessageUnmarshaller
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> FromRequestUnmarshaller
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> FromStringUnmarshaller
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Function1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Function2
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Future
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> In
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Join
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> JoinAux
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> JsArray
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> JsObject
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> JsString
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> JsValue
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> L
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Map
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Marshaller
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> MatchError
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Nothing
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Object
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Op
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Out
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> P
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> ParamDef
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> ParamDefAux
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> ParamMagnet
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> ParameterDirectives
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> PathMatcher
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> PathMatcher0
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Predef
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> RequestContext
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> RootJsObjectFormat
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> RootJsonReader
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Route
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> RouteConcatenation
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> RouteResult
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> RouteWithConcatenation
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Routes
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> S
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> ScalaActorRef
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> SprayJsonSupport
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> StandardRoute
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> String
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> StringMarshaller
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> T
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> T0
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> T1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> T2
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> TA
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> TB
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> ToEntityMarshaller
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> ToResponseMarshallable
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> ToResponseMarshaller
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Tuple1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Tuple2
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> TupleOps
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> U
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Unit
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Unmarshaller
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> Vector
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> WebServer
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> X
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> _1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> _2
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> _enhanceRouteWithConcatenation
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> _segmentStringToPathMatcher
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> actor
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> actorRef2Scala
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> addByNameNullaryApply
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> addDirectiveApply
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> akka
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> append1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> apply
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> as
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> asInstanceOf
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> asJsObject
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> challenge
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> com
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> complete
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> data
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> elements
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> entity
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> entry
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> event
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> fbVerifyToken
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> fields
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> forString
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> forTuple
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> foreach
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> from
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> get
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> getCommunicator
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> hac1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> hac2
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> http
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> identityUnmarshaller
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> isInstanceOf
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> join
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> join0P
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> json
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> liftMarshaller
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> marshallers
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> marshalling
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> messageUnmarshallerFromEntityUnmarshaller
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> messaging
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> messagingEvent
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> ne
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> obecto
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> package
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> parameters
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> path
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> pathEndOrSingleSlash
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> post
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> qual$1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> scala
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> scaladsl
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> server
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> spray
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> sprayJsonUnmarshaller
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> sprayjson
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> step
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> t1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> t2
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> token
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> unmarshalling
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> util
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> value
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> x$1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> x$2
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> ~
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> <init>
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> <repeated>
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> A1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> AbstractPartialFunction
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> ActorMaterializer
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> ActorMaterializerSettings
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> ActorRef
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> ActorRefFactory
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> ActorSystem
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Any
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> AnyRef
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> App
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> B1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Boolean
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Communicator
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Config
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> ConfigFactory
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> ConnectionContext
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> ConnectionPoolSettings
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> ContentType
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> DefaultJsonProtocol
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Directives
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> ExceptionHandler
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> ExecutionContext
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> ExecutionContextExecutor
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Failure
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Flow
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Function1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Future
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> HTTP$div1$u002E1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> HTTP/1.1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Http
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> HttpEntity
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> HttpExt
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> HttpHeader
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> HttpMethod
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> HttpMethods
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> HttpProtocol
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> HttpProtocols
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> HttpRequest
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> HttpResponse
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> HttpsConnectionContext
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Int
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> JsValue
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> LoggingAdapter
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> MatchError
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Materializer
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> MediaType
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> MediaTypes
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> NonBinary
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> NotUsed
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Nothing
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Object
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Option
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> POST
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> ParserSettings
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> PartialFunction
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Predef
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Props
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> RejectionHandler
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> RequestEntity
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Route
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> RouteResult
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Routes
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> RoutingLog
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> RoutingSettings
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Seq
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> ServerBinding
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> ServerSettings
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> SprayJsonSupport
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> StdIn
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Strict
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> String
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> StringContext
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Success
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> T0
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Throwable
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Try
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> U
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Unit
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> Uri
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> WebServer
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> WithFixedCharset
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> actor
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> actorOf
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> akka
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> application$divjson
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> application/json
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> apply
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> asInstanceOf
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> baseRoutes
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> bindAndHandle
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> bindingFuture
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> collect
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> com
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> communicator
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> concurrent
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> config
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> default
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> dispatcher
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> exception
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> executionContext
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> fail
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> fromActorSystem
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> getInt
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> getMessage
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> getString
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> http
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> io
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> isInstanceOf
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> javadsl
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> json
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> load
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> marshallers
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> materializer
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> model
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> ne
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> obecto
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> onComplete
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> package
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> println
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> props
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> qual$1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> qual$2
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> response
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> route2HandlerFlow
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> s
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> scala
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> scaladsl
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> server
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> settings
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> singleRequest
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> spray
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> sprayjson
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> stream
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> system
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> toString
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> typesafe
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> unchecked
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> util
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> v
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> value
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$1
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$10
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$11
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$12
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$13
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$14
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$15
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$16
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$17
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$18
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$19
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$2
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$20
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$21
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$22
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$23
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$3
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$4
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$5
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$6
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$7
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$8
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> x$9
+product stamps:
+9 items
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\target\scala-2.12\classes\com\obecto\Communicator$$anonfun$receive$1.class -> lastModified(1496668247606)
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\target\scala-2.12\classes\com\obecto\Communicator$.class -> lastModified(1496668247604)
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\target\scala-2.12\classes\com\obecto\Communicator.class -> lastModified(1496668247602)
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\target\scala-2.12\classes\com\obecto\Routes$.class -> lastModified(1496668247611)
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\target\scala-2.12\classes\com\obecto\Routes.class -> lastModified(1496668247609)
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\target\scala-2.12\classes\com\obecto\WebServer$$anonfun$1.class -> lastModified(1496668247618)
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\target\scala-2.12\classes\com\obecto\WebServer$.class -> lastModified(1496668247615)
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\target\scala-2.12\classes\com\obecto\WebServer$delayedInit$body.class -> lastModified(1496668247620)
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\target\scala-2.12\classes\com\obecto\WebServer.class -> lastModified(1496668247613)
+source stamps:
+3 items
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> hash(09597ede8752fcc6d0ac35a2bb83c9e3557d9fd7)
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> hash(6ba85721ef8c5d5a18bf2229df12e0b014d37196)
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> hash(cfb47a1f86b815cbd0bffac6f634ff52623ddaeb)
+binary stamps:
+9 items
+C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar -> lastModified(1490049257112)
+C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-actor_2.12\jars\akka-actor_2.12-2.5.2.jar -> lastModified(1495619304000)
+C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-http-core_2.12\jars\akka-http-core_2.12-10.0.7.jar -> lastModified(1495727907000)
+C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-http-spray-json_2.12\jars\akka-http-spray-json_2.12-10.0.7.jar -> lastModified(1495727911000)
+C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-http_2.12\jars\akka-http_2.12-10.0.7.jar -> lastModified(1495727922000)
+C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-stream_2.12\jars\akka-stream_2.12-2.5.2.jar -> lastModified(1495619455000)
+C:\Users\gbarn_000\.ivy2\cache\com.typesafe\config\bundles\config-1.3.1.jar -> lastModified(1474721599000)
+C:\Users\gbarn_000\.ivy2\cache\io.spray\spray-json_2.12\bundles\spray-json_2.12-1.3.3.jar -> lastModified(1483006115000)
+C:\Users\gbarn_000\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.2.jar -> lastModified(1492071552000)
+class names:
+9 items
+C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar -> java.lang.Object
+C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-actor_2.12\jars\akka-actor_2.12-2.5.2.jar -> akka.actor.ActorRefFactory
+C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-http-core_2.12\jars\akka-http-core_2.12-10.0.7.jar -> akka.http.scaladsl.settings.ParserSettings
+C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-http-spray-json_2.12\jars\akka-http-spray-json_2.12-10.0.7.jar -> akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport$
+C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-http_2.12\jars\akka-http_2.12-10.0.7.jar -> akka.http.scaladsl.server.Directives$
+C:\Users\gbarn_000\.ivy2\cache\com.typesafe.akka\akka-stream_2.12\jars\akka-stream_2.12-2.5.2.jar -> akka.stream.ActorMaterializerSettings
+C:\Users\gbarn_000\.ivy2\cache\com.typesafe\config\bundles\config-1.3.1.jar -> com.typesafe.config.ConfigFactory
+C:\Users\gbarn_000\.ivy2\cache\io.spray\spray-json_2.12\bundles\spray-json_2.12-1.3.3.jar -> spray.json.JsValue
+C:\Users\gbarn_000\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.2.jar -> scala.App
+internal apis:
+3 items
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwJk6ixgAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAANzcgAgeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2hbDvUidjhXzwIAAkkABGhhc2hMAARuYW1ldAASTGphdmEvbGFuZy9TdHJpbmc7eHBy1eUgdAAEc2VsZnNxAH4ACy1FJLN0AAxtYXRlcmlhbGl6ZXJzcQB+AAtVDBZrdAAHY29udGV4dHVxAH4ACQAAAClzcQB+AAsvsmpddAAGbm90aWZ5c3EAfgALfVPHGnQADWZiQWNjZXNzVG9rZW5zcQB+AAucErr2dAAHUmVjZWl2ZXNxAH4AC4kEE7R0AAR3YWl0c3EAfgALye9gjXQADSRhc0luc3RhbmNlT2ZzcQB+AAuJ54HDdAAGZXF1YWxzc3EAfgALm7+8bnQADGFzSW5zdGFuY2VPZnNxAH4AC+dO1FR0AAxzeW5jaHJvbml6ZWRzcQB+AAuUKm8BdAANJGlzSW5zdGFuY2VPZnNxAH4AC+nSL+10AAxDb21tdW5pY2F0b3JzcQB+AAsNd4IMdAAHcmVjZWl2ZXNxAH4ACz4YemV0AApwcmVSZXN0YXJ0c3EAfgAL3hgCK3QADWFyb3VuZFJlY2VpdmVzcQB+AAtOajoSdAALcG9zdFJlc3RhcnRzcQB+AAsUxe7rdAAIcG9zdFN0b3BzcQB+AAvC0bcDdAAJbm90aWZ5QWxsc3EAfgALUCwxLnQAEWFyb3VuZFBvc3RSZXN0YXJ0c3EAfgALlKYb1XQADGlzSW5zdGFuY2VPZnNxAH4AC3gLDEp0ABBhcm91bmRQcmVSZXN0YXJ0c3EAfgALSYnGwXQADmFyb3VuZFBvc3RTdG9wc3EAfgALvunyIHQABjxpbml0PnNxAH4AC3vEWAx0AAhwcmVTdGFydHNxAH4AC/sJAkF0AAl1bmhhbmRsZWRzcQB+AAujNg/FdAACPT1zcQB+AAsL7rEydAAFY2xvbmVzcQB+AAs3gW1KdAAGJGluaXQkc3EAfgALhzJIHHQABnNlbmRlcnNxAH4ACwTlPhV0AAh0b1N0cmluZ3NxAH4AC2VmKQ10AAIhPXNxAH4AC9cLRKJ0AAhnZXRDbGFzc3NxAH4AC3Usm910AAVwcm9wc3NxAH4AC8f0CAN0AARodHRwc3EAfgALa33HK3QAAm5lc3EAfgALoDqDW3QADWZiVmVyaWZ5VG9rZW5zcQB+AAtvqQ7wdAASc3VwZXJ2aXNvclN0cmF0ZWd5c3EAfgALzy4buHQAAmVxc3EAfgALPhzj8nQAA2xvZ3NxAH4AC2zPZQN0AAIjI3NxAH4AC+SmrdZ0AAhmaW5hbGl6ZXNxAH4AC2iwW9R0AAhoYXNoQ29kZXNxAH4AC/hF6nJ0AA5hcm91bmRQcmVTdGFydHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAJzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AG94cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgAMeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc5fnYdwTJnuzAgABQgAFZmxhZ3N4cAB0ABdjb20ub2JlY3RvLkNvbW11bmljYXRvcnVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyACF4c2J0aS5hcGkuQWJzdHJhY3RMYXp5JFN0cmljdExhenkNZhxrKRYquAIAAUwABXZhbHVldAASTGphdmEvbGFuZy9PYmplY3Q7eHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgCHc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AG9MAAlpbmhlcml0ZWRxAH4Ab0wAB3BhcmVudHNxAH4Ab3hxAH4AjHNxAH4Ah3VxAH4AagAAAABzcQB+AId1cQB+AGoAAAAAc3EAfgCHdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAANzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AAxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgCLdAAFQWN0b3JzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AItzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAMeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABGFra2FzcQB+AKR0AAVhY3RvcnNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgClc3EAfgCYdAAGT2JqZWN0c3EAfgCcc3EAfgCfdXEAfgCiAAAAA3NxAH4ApHQABGphdmFzcQB+AKR0AARsYW5ncQB+AKtzcQB+AJh0AANBbnlzcQB+AJxzcQB+AJ91cQB+AKIAAAACc3EAfgCkdAAFc2NhbGFxAH4Aq3NxAH4AbHEAfgB5dXEAfgB6AAAAAHNxAH4AfAB0ABdjb20ub2JlY3RvLkNvbW11bmljYXRvcnVxAH4AfwAAAAB+cQB+AIF0AAZNb2R1bGV1cQB+AIUAAAAAc3EAfgCHcQB+AI1zcQB+AIdzcQB+AI9zcQB+AId1cQB+AGoAAAAAc3EAfgCHdXEAfgBqAAAAAHNxAH4Ah3VxAH4AlgAAAAJzcQB+AJhxAH4ArXNxAH4AnHNxAH4An3VxAH4AogAAAANzcQB+AKRxAH4AsnNxAH4ApHEAfgC0cQB+AKtzcQB+AJhxAH4AtnNxAH4AnHNxAH4An3VxAH4AogAAAAJzcQB+AKRxAH4Au3EAfgCrdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAJzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADHhwdAAKY29tLm9iZWN0b3NxAH4A2nQAA2NvbXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXHhg28V1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AAxMAA9zb3VyY2VEaXJlY3RvcnlxAH4ADHhwdABSQzpcVXNlcnNcZ2Jhcm5fMDAwXERvY3VtZW50c1xTY2FsYSBwcm9qZWN0c1xsdWNhLWNoYXRib3RcdGFyZ2V0XHNjYWxhLTIuMTJcY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFAlZft6HUvzG0Kw1oruDyeNVfZ/X
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhw4JuZwgAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAADlzcgAgeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2hbDvUidjhXzwIAAkkABGhhc2hMAARuYW1ldAASTGphdmEvbGFuZy9TdHJpbmc7eHCRDRxndAAic3ByYXlKc1ZhbHVlQnl0ZVN0cmluZ1VubWFyc2hhbGxlcnNxAH4AC7cxHFN0AA5Vbml0SnNvbkZvcm1hdHNxAH4AC38mWeZ0AB5zcHJheUpzb25Vbm1hcnNoYWxsZXJDb252ZXJ0ZXJzcQB+AAubJEdjdAAKbGlzdEZvcm1hdHNxAH4ACwawIe50AApfc3ltYm9sMk5Sc3EAfgALDuFfnXQAAmV2c3EAfgALUc8otXQAGHNwcmF5SnNWYWx1ZVVubWFyc2hhbGxlcnNxAH4AC5ECLCJ0AAx2ZWN0b3JGb3JtYXRzcQB+AAt7PSt2dAASUm9vdEpzT2JqZWN0Rm9ybWF0c3EAfgALqz2bxXQAEUJvb2xlYW5Kc29uRm9ybWF0c3EAfgALy+qpdHQAHl9lbmhhbmNlUm91dGVXaXRoQ29uY2F0ZW5hdGlvbnNxAH4AC9BLjYR0AAlzZXRGb3JtYXRzcQB+AAvASHJddAARUm9vdEpzQXJyYXlGb3JtYXRzcQB+AAsrAenLdAAVc3ByYXlKc29uVW5tYXJzaGFsbGVyc3EAfgALKrylZHQAFV92YWx1ZU1hcDJQYXRoTWF0Y2hlcnNxAH4AC/Hpo2h0AA1Kc1ZhbHVlRm9ybWF0c3EAfgALddDRR3QAJ19zdHJpbmdOYW1lT3B0aW9uUmVjZXB0YWNsZTJQYXRoTWF0Y2hlcnNxAH4AC0L28/V0AA5Mb25nSnNvbkZvcm1hdHNxAH4AC2Qa0NN0AAx0dXBsZTFGb3JtYXRzcQB+AAuOqhjtdAAQaW5kZXhlZFNlcUZvcm1hdHNxAH4ACzkaD510AAxvcHRpb25Gb3JtYXRzcQB+AAtRd97sdAAPbGluZWFyU2VxRm9ybWF0c3EAfgALRlMhtXQAIV9zdHJpbmdFeHRyYWN0aW9uUGFpcjJQYXRoTWF0Y2hlcnNxAH4AC8S7vDF0ABBTeW1ib2xKc29uRm9ybWF0c3EAfgAL1h0a33QAHHNwcmF5SnNvbk1hcnNoYWxsZXJDb252ZXJ0ZXJzcQB+AAs0CJKydAAVc3ByYXlKc29uU291cmNlUmVhZGVyc3EAfgALo11IhHQADHR1cGxlNUZvcm1hdHNxAH4AC4RQ20F0AAx0dXBsZTNGb3JtYXRzcQB+AAsefuc0dAASaW1tTGluZWFyU2VxRm9ybWF0c3EAfgALUC89wnQADHR1cGxlN0Zvcm1hdHNxAH4AC6ksMpN0ABNzcHJheUpzb25NYXJzaGFsbGVyc3EAfgALU0DtZHQAFnNwcmF5SnNWYWx1ZU1hcnNoYWxsZXJzcQB+AAsuFm+DdAAMaW1tU2V0Rm9ybWF0c3EAfgALdtEyjXQADGVpdGhlckZvcm1hdHNxAH4ACwT03LN0ABtfc2VnbWVudFN0cmluZ1RvUGF0aE1hdGNoZXJzcQB+AAu+h1OVdAAOQ2hhckpzb25Gb3JtYXRzcQB+AAuGPBc9dAAUQmlnRGVjaW1hbEpzb25Gb3JtYXRzcQB+AAuzK+kKdAAPU2hvcnRKc29uRm9ybWF0c3EAfgALL8yv/3QAH3NwcmF5SnNvbkJ5dGVTdHJpbmdVbm1hcnNoYWxsZXJzcQB+AAutSmN3dAAMdHVwbGU2Rm9ybWF0c3EAfgALcyRt1nQAEFN0cmluZ0pzb25Gb3JtYXRzcQB+AAvrLwGgdAALYXJyYXlGb3JtYXRzcQB+AAvrtnMZdAAKX3N0cmluZzJOUnNxAH4ACxKEl7h0ABFpbW1JdGVyYWJsZUZvcm1hdHNxAH4AC37bEA10AA5CeXRlSnNvbkZvcm1hdHNxAH4ACxN3IwR0AAx0dXBsZTJGb3JtYXRzcQB+AAvTqqJedAATaW1tSW5kZXhlZFNlcUZvcm1hdHNxAH4ACx7lAPh0AAxpbW1TZXFGb3JtYXRzcQB+AAtDVy3IdAAMdHVwbGU0Rm9ybWF0c3EAfgAL7pYfvHQAD0Zsb2F0SnNvbkZvcm1hdHNxAH4AC5ch9Hh0AA5pdGVyYWJsZUZvcm1hdHNxAH4AC9tgvhV0AA1JbnRKc29uRm9ybWF0c3EAfgAL5gP/IHQAEERvdWJsZUpzb25Gb3JtYXRzcQB+AAsAB5nJdAASX3JlZ2V4MlBhdGhNYXRjaGVyc3EAfgALGbMC8nQACW1hcEZvcm1hdHNxAH4ACzquq6F0AAlzZXFGb3JtYXRzcQB+AAv9P4kQdAAQQmlnSW50SnNvbkZvcm1hdHVxAH4ACQAAARBzcQB+AAvTslh+dAAVZXh0cmFjdFBhcnNlclNldHRpbmdzc3EAfgAL4JH1MXQACWZvcm1GaWVsZHNxAH4AC8EAhQx0ABB3aXRoUmFuZ2VTdXBwb3J0c3EAfgALoS0wB3QAEndpdGhSZXF1ZXN0VGltZW91dHNxAH4ACz+sX2J0ABRwYXRoRW5kT3JTaW5nbGVTbGFzaHNxAH4AC/8HxrB0AAZub3RpZnlzcQB+AAsXDvr8dAAJSW50TnVtYmVyc3EAfgALR1+HhXQAEWF1dGhlbnRpY2F0ZUJhc2ljc3EAfgALLkdJbXQAE2V4dHJhY3RTdHJpY3RFbnRpdHlzcQB+AAtbE6HkdAAEcmVhZHNxAH4AC8GSF+F0AAlmcm9tRmllbGRzcQB+AAsaYLY+dAAPcGF0aFNpbmdsZVNsYXNoc3EAfgAL2orE4nQAC2pzb25Gb3JtYXQ5c3EAfgALss2sznQAGHJlc3BvbnNlRW5jb2RpbmdBY2NlcHRlZHNxAH4AC73pXFx0AAZtZXRob2RzcQB+AAuT0OYPdAAEcG9zdHNxAH4AC91G5Ml0ABJtYXBSb3V0ZVJlc3VsdFdpdGhzcQB+AAvcyC4OdAAXYXV0aGVudGljYXRlT0F1dGgyQXN5bmNzcQB+AAuHlxHsdAAManNvbkZvcm1hdDE2c3EAfgALUwmp2XQAEWhlYWRlclZhbHVlQnlOYW1lc3EAfgALAMD7nXQACmZpbGVVcGxvYWRzcQB+AAuFrqnWdAANUmVtYWluaW5nUGF0aHNxAH4AC5etcMd0AAlSZW1haW5pbmdzcQB+AAtEhOO3dAAVb3B0aW9uYWxIZWFkZXJWYWx1ZVBGc3EAfgAL+j4zyXQACHRwcm92aWRlc3EAfgALpqL1i3QADGpzb25Gb3JtYXQyMHNxAH4AC38wPzR0AAlwYXJhbWV0ZXJzcQB+AAu/XkuMdAANZXh0cmFjdE1ldGhvZHNxAH4AC5HSICJ0ABlyZXNwb25kV2l0aERlZmF1bHRIZWFkZXJzc3EAfgAL+t3ginQAEnJlc3BvbmRXaXRoSGVhZGVyc3NxAH4AC+S61JV0ABp3aXRoUmVxdWVzdFRpbWVvdXRSZXNwb25zZXNxAH4ACzxd+Gp0AAR3YWl0c3EAfgALhQoSyXQABnZpYVNlcXNxAH4AC4SBEGZ0AApsYXp5Rm9ybWF0c3EAfgALkkhV03QAFWxpc3REaXJlY3RvcnlDb250ZW50c3NxAH4AC3FqREB0ABlleHRyYWN0VXBncmFkZVRvV2ViU29ja2V0c3EAfgALSEsGZHQADSRhc0luc3RhbmNlT2ZzcQB+AAsHrQZEdAAManNvbkZvcm1hdDEyc3EAfgALn/Iem3QADGpzb25Gb3JtYXQxM3NxAH4AC8Zhw790AARwYXRoc3EAfgALz59kcHQAGWV4dHJhY3RPZmZlcmVkV3NQcm90b2NvbHNzcQB+AAsM1JGqdAALanNvbkZvcm1hdDJzcQB+AAt9m5QqdAAKaW5zdGFuY2VPZnNxAH4AC6YrR6Z0AAdOZXV0cmFsc3EAfgALXzizHnQAB2NvbXBvc2VzcQB+AAvilRZHdAAIcmVkaXJlY3RzcQB+AAtj4m9FdAAScmVxdWVzdEVudGl0eUVtcHR5c3EAfgALh4fi6XQADWhlYWRlclZhbHVlUEZzcQB+AAvlxofedAAOYXV0aG9yaXplQXN5bmNzcQB+AAsd+0PldAAHUGF0aEVuZHNxAH4AC1E7VoZ0AA9mcm9tRGVjaW1hbENoYXJzcQB+AAsMOXC3dAAMZm9ybUZpZWxkTWFwc3EAfgALooN7EHQAEGV4dHJhY3REYXRhQnl0ZXNzcQB+AAv5HqNsdAAGZXF1YWxzc3EAfgAL+taIFXQAC2pzb25Gb3JtYXQ2c3EAfgALw2jggXQAD0F1dGhlbnRpY2F0b3JQRnNxAH4AC60Fo1V0ABNpZ25vcmVUcmFpbGluZ1NsYXNoc3EAfgALB6q0wXQACG1pbnVzT25lc3EAfgAL0IP7/3QAEXJhd1BhdGhQcmVmaXhUZXN0c3EAfgALxqg3CnQAGGdldEZyb21SZXNvdXJjZURpcmVjdG9yeXNxAH4ACyRhM2Z0ABNvcHRpb25hbEhlYWRlclZhbHVlc3EAfgALyidg4XQAEGdldEZyb21EaXJlY3RvcnlzcQB+AAuD5bjrdAAIdGV4dHJhY3RzcQB+AAsin2L5dAAKbWF4RGl2QmFzZXNxAH4AC3+zz5p0ACBzcHJheUpzVmFsdWVNYXJzaGFsbGVyJGRlZmF1bHQkMXNxAH4AC058hnZ0ACJnZXRGcm9tUmVzb3VyY2VEaXJlY3RvcnkkZGVmYXVsdCQyc3EAfgALhhwz2nQAC21hcFNldHRpbmdzc3EAfgALAOizIHQABGhlYWRzcQB+AAu+YWf+dAAXaGFuZGxlV2ViU29ja2V0TWVzc2FnZXNzcQB+AAspL2vCdAAMYXNJbnN0YW5jZU9mc3EAfgAL9QuJtHQAEGhhbmRsZVJlamVjdGlvbnNzcQB+AAvllBl0dAAKcGF0aFByZWZpeHNxAH4ACwy6f310AA1IZXhMb25nTnVtYmVyc3EAfgAL0aAjRnQAKmhhbmRsZVdlYlNvY2tldE1lc3NhZ2VzRm9yT3B0aW9uYWxQcm90b2NvbHNxAH4AC6ARhMh0AAxqc29uRm9ybWF0MTVzcQB+AAvyCPrTdAACSkZzcQB+AAsvH89GdAAMSGV4SW50TnVtYmVyc3EAfgAL3OkdSHQABGhvc3RzcQB+AAufYIrpdAAYcmVzcG9uZFdpdGhEZWZhdWx0SGVhZGVyc3EAfgALKLkgY3QADHBhcmFtZXRlck1hcHNxAH4AC3mWaqV0AA50b1N0cmljdEVudGl0eXNxAH4AC62zR+90AApMb25nTnVtYmVyc3EAfgAL6+t+oXQACHZhbGlkYXRlc3EAfgALgLCts3QADHN5bmNocm9uaXplZHNxAH4AC1971rp0ABNyZWplY3RFbXB0eVJlc3BvbnNlc3EAfgALCIyXWXQACGZyb21DaGFyc3EAfgAL+EVzTXQAB3VuYXJ5XyFzcQB+AAvnCmZIdAAPZ2V0RnJvbVJlc291cmNlc3EAfgALykp9MnQAEnJlcXVlc3RFbmNvZGVkV2l0aHNxAH4AC+F2DyZ0AAZjb25jYXRzcQB+AAtOCKrWdAAhd2l0aFByZWNvbXByZXNzZWRNZWRpYVR5cGVTdXBwb3J0c3EAfgALlJd2E3QADGpzb25Gb3JtYXQxMXNxAH4AC1pYMrd0ABJhdXRoZW50aWNhdGVPQXV0aDJzcQB+AAuaaJKrdAAVcmVjb3ZlclJlamVjdGlvbnNXaXRoc3EAfgALLRn6D3QADSRpc0luc3RhbmNlT2ZzcQB+AAsT4pw1dAAPY2FuY2VsUmVqZWN0aW9uc3EAfgALDML4wHQAIHJlZGlyZWN0VG9UcmFpbGluZ1NsYXNoSWZNaXNzaW5nc3EAfgALh63c2nQAC2pzb25Gb3JtYXQ1c3EAfgALiUui+XQAB2FuZFRoZW5zcQB+AAs0T9UVdAAManNvbkZvcm1hdDIxc3EAfgALISqu63QAFHByb2R1Y3RFbGVtZW50MkZpZWxkc3EAfgALXho8hXQACnJvb3RGb3JtYXRzcQB+AAvTQxLLdAAecHJvZHVjdEVsZW1lbnQyRmllbGQkZGVmYXVsdCQ0c3EAfgALKMfkNnQADGRlbGV0ZUNvb2tpZXNxAH4AC5i9Yol0AAJhc3NxAH4AC0/P+wV0AAxqc29uRm9ybWF0MTRzcQB+AAvPnfzxdAANZXh0cmFjdFNjaGVtZXNxAH4AC7MYz5d0ABJBc3luY0F1dGhlbnRpY2F0b3JzcQB+AAvF5DtodAAYYXV0aGVudGljYXRlQmFzaWNQRkFzeW5jc3EAfgALqiu/z3QAAXxzcQB+AAtI/s3/dAALZXh0cmFjdEhvc3RzcQB+AAsjNPVJdAALanNvbkZvcm1hdDFzcQB+AAtBCSqmdAAWZGVsZXRlQ29va2llJGRlZmF1bHQkM3NxAH4AC2e9Fl50AA5yb290SnNvbkZvcm1hdHNxAH4AC0UOxHp0ABJtYXBSZXNwb25zZUhlYWRlcnNzcQB+AAu1+Ug6dAAUcmVxdWVzdEVudGl0eVByZXNlbnRzcQB+AAtOsEEDdAAOZW5jb2RlUmVzcG9uc2VzcQB+AAuurlh2dAASZXh0cmFjdEFjdG9yU3lzdGVtc3EAfgALdP/fanQAFWV4dHJhY3RSZXF1ZXN0Q29udGV4dHNxAH4ACx/scnF0ABJlbmNvZGVSZXNwb25zZVdpdGhzcQB+AAu8+BlJdAAHcHJvdmlkZXNxAH4ACyEjGsJ0AAZyZWplY3RzcQB+AAsrrmXFdAAManNvbkZvcm1hdDE5c3EAfgALH3eE03QACW5vdGlmeUFsbHNxAH4AC2S09/p0ABpnZXRGcm9tQnJvd3NlYWJsZURpcmVjdG9yeXNxAH4ACxPDti10AAhkZWxlZ2F0ZXNxAH4AC44PuXl0AAtjb25kaXRpb25hbHNxAH4ACygvttZ0ABlvcHRpb25hbEhlYWRlclZhbHVlQnlOYW1lc3EAfgALuFW2J3QABHRtYXBzcQB+AAu3mhGpdAAKZXh0cmFjdFVyaXNxAH4AC2x5gkt0AAxpc0luc3RhbmNlT2ZzcQB+AAvHyoF+dAAicmVkaXJlY3RUb05vVHJhaWxpbmdTbGFzaElmUHJlc2VudHNxAH4AC+tmNcd0AAdwYXRoRW5kc3EAfgALRDknoXQADXJhd1BhdGhQcmVmaXhzcQB+AAvXHndSdAAHb3B0aW9uc3NxAH4AC0nrI850AAptYXBSZXF1ZXN0c3EAfgALLzg+3nQAImhhbmRsZVdlYlNvY2tldE1lc3NhZ2VzRm9yUHJvdG9jb2xzcQB+AAuzbvDsdAAJb25TdWNjZXNzc3EAfgALENV0WXQAEW1hcFJlc3BvbnNlRW50aXR5c3EAfgALLTjbJHQAFHdpdGhFeGVjdXRpb25Db250ZXh0c3EAfgALOe3H/3QACGZhaWxXaXRoc3EAfgAL+LE/33QAEG1hcFVubWF0Y2hlZFBhdGhzcQB+AAsJRF5ndAAGPGluaXQ+c3EAfgALJ4bYNHQAC2dldEZyb21GaWxlc3EAfgALX2Kd0HQAFW9uQ29tcGxldGVXaXRoQnJlYWtlcnNxAH4ACwRZ/Wt0AAhyZWFkU29tZXNxAH4AC+thXBt0ABBsb2dSZXF1ZXN0UmVzdWx0c3EAfgALjlw/1XQADW1hcElubmVyUm91dGVzcQB+AAuxN6qXdAAHU2VnbWVudHNxAH4AC4j3QD50AAhjb21wbGV0ZXNxAH4AC3Yygf90AAVhcHBseXNxAH4ACx2RCph0ABFtYXBSZXF1ZXN0Q29udGV4dHNxAH4AC5OqgaB0AA5wYXRoUHJlZml4VGVzdHNxAH4ACxwkehR0AA1BdXRoZW50aWNhdG9yc3EAfgALOZuPlXQAHGdldEZyb21Ccm93c2VhYmxlRGlyZWN0b3JpZXNzcQB+AAskTjtEdAALanNvbkZvcm1hdDRzcQB+AAvVRpnudAAMY29tcGxldGVXaXRoc3EAfgALjg6IcHQADHBhcmFtZXRlclNlcXNxAH4AC15/+Gt0AA5vcHRpb25hbENvb2tpZXNxAH4AC2A8HC90AAI9PXNxAH4AC/ULk+F0AB1zcHJheUpzb25NYXJzaGFsbGVyJGRlZmF1bHQkMnNxAH4ACyrHrcx0AAZzY2hlbWVzcQB+AAupyI3edAAUYXV0aGVudGljYXRlT0F1dGgyUEZzcQB+AAuVIENydAAGY29va2llc3EAfgALQ810HnQAFEF1dGhlbnRpY2F0aW9uUmVzdWx0c3EAfgALhMjaNXQABVNsYXNoc3EAfgAL9SP/gXQABWNsb25lc3EAfgAL+l03PnQACWF1dGhvcml6ZXNxAH4ACzBSfAN0AApiYXNlUm91dGVzc3EAfgALIsqM8HQAFG1hcFJvdXRlUmVzdWx0RnV0dXJlc3EAfgALX9Rjy3QAGWF1dGhlbnRpY2F0ZU9BdXRoMlBGQXN5bmNzcQB+AAsCLDbSdAAManNvbkZvcm1hdDEwc3EAfgALI6mYIHQAG1JlcXVlc3RUb1NvdXJjZVVubWFyc2hhbGxlcnNxAH4AC++gkot0AAtqc29uRm9ybWF0MHNxAH4AC6ajvbd0AAtoZWFkZXJWYWx1ZXNxAH4AC2GF7510AAxqc29uRm9ybWF0MjJzcQB+AAvnKjC4dAAKaGFuZGxlV2l0aHNxAH4ACxBbUxZ0ABB3aXRoTWF0ZXJpYWxpemVyc3EAfgALCc7cu3QABmRlbGV0ZXNxAH4AC602W7t0AAxPcHRpb25Gb3JtYXRzcQB+AAuc5OoLdAARcmVjb3ZlclJlamVjdGlvbnNzcQB+AAuChgH1dAAManNvbkZvcm1hdDE4c3EAfgALUo6//HQABiRpbml0JHNxAH4ACz/Nm6h0ABZkZWxldGVDb29raWUkZGVmYXVsdCQyc3EAfgALXr0l6nQABlJvdXRlc3NxAH4ACxbyF8p0AAphc1NvdXJjZU9mc3EAfgALGnAto3QABmVudGl0eXNxAH4AC4s67ud0AAlzZXRDb29raWVzcQB+AAt26puQdAAmc3ByYXlKc29uTWFyc2hhbGxlckNvbnZlcnRlciRkZWZhdWx0JDJzcQB+AAuOoJvgdAAEcGFzc3NxAH4ACyDHthx0AA9leHRyYWN0Q2xpZW50SVBzcQB+AAt6KB9GdAADcHV0c3EAfgALEn5OdnQAE2F1dGhlbnRpY2F0ZUJhc2ljUEZzcQB+AAs/7knndAARcGFyYW1ldGVyTXVsdGlNYXBzcQB+AAvUnQjydAAQcmVwZWF0JGRlZmF1bHQkM3NxAH4ACxx1ewl0ABBtYXBSb3V0ZVJlc3VsdFBGc3EAfgALpZaGBHQACHRvU3RyaW5nc3EAfgALrGsyznQAE2V4dHJhY3RNYXRlcmlhbGl6ZXJzcQB+AAtnBidUdAAJbG9nUmVzdWx0c3EAfgALJViMkXQAG292ZXJyaWRlTWV0aG9kV2l0aFBhcmFtZXRlcnNxAH4AC9C7E390AAd3aXRoTG9nc3EAfgALa36txXQACFNlZ21lbnRzc3EAfgALev4hXnQACmpzb25Gb3JtYXRzcQB+AAtJFlgEdAAObWFwUm91dGVSZXN1bHRzcQB+AAu5hqu0dAACIT1zcQB+AAtTySZfdAALanNvbkZvcm1hdDhzcQB+AAudusKXdAAUZXh0cmFjdFJlcXVlc3RFbnRpdHlzcQB+AAu4CCPbdAARZm9ybUZpZWxkTXVsdGlNYXBzcQB+AAsTnQ+QdAADZ2V0c3EAfgALrCfqyHQAFEFzeW5jQXV0aGVudGljYXRvclBGc3EAfgALd10n73QADXdpdGhTaXplTGltaXRzcQB+AAuoairodAAOcGF0aFN1ZmZpeFRlc3RzcQB+AAvWB5HtdAAIdGZsYXRNYXBzcQB+AAuAtMS9dAAXc2VsZWN0UHJlZmVycmVkTGFuZ3VhZ2VzcQB+AAskw9XGdAAIZ2V0Q2xhc3NzcQB+AAvG6zI+dAAGcmVwZWF0c3EAfgALzqChoXQAEWRlY29kZVJlcXVlc3RXaXRoc3EAfgAL1Z9p6HQAEWhlYWRlclZhbHVlQnlUeXBlc3EAfgALsKMa+XQAEGhhbmRsZUV4Y2VwdGlvbnNzcQB+AAsO/RrFdAAKcGF0aFN1ZmZpeHNxAH4AC6BRIPl0ABVjb21wbGV0ZU9yUmVjb3ZlcldpdGhzcQB+AAt+KRzqdAAVd2l0aG91dFJlcXVlc3RUaW1lb3V0c3EAfgALGCphBXQAFG1hcFJvdXRlUmVzdWx0V2l0aFBGc3EAfgALv8adFnQACm9uQ29tcGxldGVzcQB+AAtMR6bodAALbWFwUmVzcG9uc2VzcQB+AAtb8+X7dAAFcGF0Y2hzcQB+AAtlB7hOdAAMdXBsb2FkZWRGaWxlc3EAfgALK0Ka+nQADm5vdGhpbmdNYXRjaGVyc3EAfgALxpEaVXQAE19kZWZhdWx0Q2xhc3NMb2FkZXJzcQB+AAu9rpSHdAAQY2FuY2VsUmVqZWN0aW9uc3NxAH4AC2YyuNR0AAhKYXZhVVVJRHNxAH4AC3clN/h0AApsb2dSZXF1ZXN0c3EAfgAL6lW9L3QAAm5lc3EAfgALq+UYznQADW1hcFJlamVjdGlvbnNzcQB+AAt2c69/dAAXZXh0cmFjdEV4ZWN1dGlvbkNvbnRleHRzcQB+AAuhaudbdAAKZm9ybUZpZWxkc3NxAH4AC8IT6g50AAl0cmFuc2Zvcm1zcQB+AAvlAtBLdAAZZ2V0RnJvbVJlc291cmNlJGRlZmF1bHQkM3NxAH4AC4Av0iB0ABZhdXRoZW50aWNhdGVCYXNpY0FzeW5jc3EAfgALYQaXGHQACnBhcmFtZXRlcnNzcQB+AAuFZA/ydAABfnNxAH4AC55RBFJ0AARsaWZ0c3EAfgALurbtO3QAFGV4dHJhY3RVbm1hdGNoZWRQYXRoc3EAfgALXDk913QADU51bWJlck1hdGNoZXJzcQB+AAvwbS5XdAALanNvbkZvcm1hdDNzcQB+AAuuP8GgdAAhYXV0aGVudGljYXRlT3JSZWplY3RXaXRoQ2hhbGxlbmdlc3EAfgALp1XdRnQAD2NoZWNrU2FtZU9yaWdpbnNxAH4AC9nYXHN0ABB3aXRob3V0U2l6ZUxpbWl0c3EAfgAL9aGfjHQAAmVxc3EAfgALSggN0HQABXdyaXRlc3EAfgALpMzYBHQADGZvcm1GaWVsZFNlcXNxAH4ACwnDrUt0ABJleHRyYWN0TWF0Y2hlZFBhdGhzcQB+AAsoU7QldAAMRG91YmxlTnVtYmVyc3EAfgALc5jHV3QADHdpdGhTZXR0aW5nc3NxAH4AC5Tnu1B0AAEvc3EAfgALO8A5k3QADmV4dHJhY3RSZXF1ZXN0c3EAfgALo6VUSnQACmV4dHJhY3RMb2dzcQB+AAvQDz6TdAASZXh0cmFjdENyZWRlbnRpYWxzc3EAfgAL6L3S6HQACnNhZmVSZWFkZXJzcQB+AAvOAOlydAANZGVjb2RlUmVxdWVzdHNxAH4ACyj5Wh50ABFyZXNwb25kV2l0aEhlYWRlcnNxAH4AC2HfzUJ0AAIjI3NxAH4AC3L+PAl0AAhmaW5hbGl6ZXNxAH4ACzAgLP90AAdleHRyYWN0c3EAfgALhaz+2HQACGhhc2hDb2Rlc3EAfgALWTDTO3QAEWV4dHJhY3RGaWVsZE5hbWVzc3EAfgALk5uEunQAD2V4dHJhY3RTZXR0aW5nc3NxAH4ACxQamfx0AAtmcm9tSGV4Q2hhcnNxAH4AC3+RSmt0AAxqc29uRm9ybWF0MTdzcQB+AAuyzQBBdAAZb3B0aW9uYWxIZWFkZXJWYWx1ZUJ5VHlwZXNxAH4ACxcEijZ0AAtqc29uRm9ybWF0N3NxAH4AC/pabRt0ABFzZXBhcmF0ZU9uU2xhc2hlc3NyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+Aql4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgAMeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc5fnYdwTJnuzAgABQgAFZmxhZ3N4cAB0ABFjb20ub2JlY3RvLlJvdXRlc3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4CwXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgKpTAAJaW5oZXJpdGVkcQB+AqlMAAdwYXJlbnRzcQB+Aql4cQB+AsZzcQB+AsF1cQB+AqQAAAAAc3EAfgLBdXEAfgKkAAAAAHNxAH4CwXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAAoc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgAMTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4CxXQAE0RlZmF1bHRKc29uUHJvdG9jb2xzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AsVzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAMeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNwcmF5c3EAfgLedAAEanNvbnNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgLfc3EAfgLSdAARQWRkaXRpb25hbEZvcm1hdHNxAH4C2HNxAH4C0nQADlByb2R1Y3RGb3JtYXRzcQB+AthzcQB+AtJ0ABdQcm9kdWN0Rm9ybWF0c0luc3RhbmNlc3EAfgLYc3EAfgLSdAARQ29sbGVjdGlvbkZvcm1hdHNxAH4C2HNxAH4C0nQAD1N0YW5kYXJkRm9ybWF0c3EAfgLYc3EAfgLSdAAMQmFzaWNGb3JtYXRzcQB+AthzcQB+AtJ0ABBTcHJheUpzb25TdXBwb3J0c3EAfgLWc3EAfgLZdXEAfgLcAAAABnNxAH4C3nQABGFra2FzcQB+At50AARodHRwc3EAfgLedAAIc2NhbGFkc2xzcQB+At50AAttYXJzaGFsbGVyc3NxAH4C3nQACXNwcmF5anNvbnEAfgLlc3EAfgLSdAAKRGlyZWN0aXZlc3NxAH4C1nNxAH4C2XVxAH4C3AAAAAVzcQB+At50AARha2thc3EAfgLedAAEaHR0cHNxAH4C3nQACHNjYWxhZHNsc3EAfgLedAAGc2VydmVycQB+AuVzcQB+AtJ0AB9GcmFtZWRFbnRpdHlTdHJlYW1pbmdEaXJlY3RpdmVzc3EAfgLWc3EAfgLZdXEAfgLcAAAABnNxAH4C3nQABGFra2FzcQB+At50AARodHRwc3EAfgLedAAIc2NhbGFkc2xzcQB+At50AAZzZXJ2ZXJzcQB+At50AApkaXJlY3RpdmVzcQB+AuVzcQB+AtJ0ABNXZWJTb2NrZXREaXJlY3RpdmVzcQB+AxBzcQB+AtJ0ABJTZWN1cml0eURpcmVjdGl2ZXNxAH4DEHNxAH4C0nQAEFNjaGVtZURpcmVjdGl2ZXNxAH4DEHNxAH4C0nQAD1JvdXRlRGlyZWN0aXZlc3EAfgMQc3EAfgLSdAAVUmVzcG9uZFdpdGhEaXJlY3RpdmVzcQB+AxBzcQB+AtJ0AA9SYW5nZURpcmVjdGl2ZXNxAH4DEHNxAH4C0nQADlBhdGhEaXJlY3RpdmVzcQB+AxBzcQB+AtJ0AB9JbXBsaWNpdFBhdGhNYXRjaGVyQ29uc3RydWN0aW9ucQB+AwNzcQB+AtJ0AAxQYXRoTWF0Y2hlcnNxAH4DA3NxAH4C0nQAEVRpbWVvdXREaXJlY3RpdmVzcQB+AxBzcQB+AtJ0ABNQYXJhbWV0ZXJEaXJlY3RpdmVzcQB+AxBzcQB+AtJ0AA5NaXNjRGlyZWN0aXZlc3EAfgMQc3EAfgLSdAAQTWV0aG9kRGlyZWN0aXZlc3EAfgMQc3EAfgLSdAAVTWFyc2hhbGxpbmdEaXJlY3RpdmVzcQB+AxBzcQB+AtJ0AA5Ib3N0RGlyZWN0aXZlc3EAfgMQc3EAfgLSdAAQSGVhZGVyRGlyZWN0aXZlc3EAfgMQc3EAfgLSdAAQRnV0dXJlRGlyZWN0aXZlc3EAfgMQc3EAfgLSdAATRm9ybUZpZWxkRGlyZWN0aXZlc3EAfgMQc3EAfgLSdAAcVG9OYW1lUmVjZXB0YWNsZUVuaGFuY2VtZW50c3NxAH4C1nNxAH4C2XVxAH4C3AAAAAVzcQB+At50AARha2thc3EAfgLedAAEaHR0cHNxAH4C3nQACHNjYWxhZHNsc3EAfgLedAAGY29tbW9ucQB+AuVzcQB+AtJ0ABRGaWxlVXBsb2FkRGlyZWN0aXZlc3EAfgMQc3EAfgLSdAAZRmlsZUFuZFJlc291cmNlRGlyZWN0aXZlc3EAfgMQc3EAfgLSdAATRXhlY3V0aW9uRGlyZWN0aXZlc3EAfgMQc3EAfgLSdAAQQ29kaW5nRGlyZWN0aXZlc3EAfgMQc3EAfgLSdAATRGVidWdnaW5nRGlyZWN0aXZlc3EAfgMQc3EAfgLSdAAQQ29va2llRGlyZWN0aXZlc3EAfgMQc3EAfgLSdAAYQ2FjaGVDb25kaXRpb25EaXJlY3RpdmVzcQB+AxBzcQB+AtJ0AA9CYXNpY0RpcmVjdGl2ZXNxAH4DEHNxAH4C0nQAElJvdXRlQ29uY2F0ZW5hdGlvbnEAfgMDc3EAfgLSdAAGT2JqZWN0c3EAfgLWc3EAfgLZdXEAfgLcAAAAA3NxAH4C3nQABGphdmFzcQB+At50AARsYW5ncQB+AuVzcQB+AtJ0AANBbnlzcQB+AtZzcQB+Atl1cQB+AtwAAAACc3EAfgLedAAFc2NhbGFxAH4C5XVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAACc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AAx4cHQACmNvbS5vYmVjdG9zcQB+A3J0AANjb21zcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVx4YNvFdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAMTAAPc291cmNlRGlyZWN0b3J5cQB+AAx4cHQAUkM6XFVzZXJzXGdiYXJuXzAwMFxEb2N1bWVudHNcU2NhbGEgcHJvamVjdHNcbHVjYS1jaGF0Ym90XHRhcmdldFxzY2FsYS0yLjEyXGNsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABRrqFch74xdWhi/IinfEuCwFNNxlg==
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwwgYlFAAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAANzcgAgeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2hbDvUidjhXzwIAAkkABGhhc2hMAARuYW1ldAASTGphdmEvbGFuZy9TdHJpbmc7eHA5yskudAAQZXhlY3V0aW9uQ29udGV4dHNxAH4AC0DhBdR0AAxtYXRlcmlhbGl6ZXJzcQB+AAv5u0FsdAAGc3lzdGVtdXEAfgAJAAAAGnNxAH4AC27lMJd0AAZub3RpZnlzcQB+AAuyXB/kdAAEd2FpdHNxAH4AC7qN9tN0AA0kYXNJbnN0YW5jZU9mc3EAfgALlyrfdnQABmVxdWFsc3NxAH4AC/MsXzt0AAxhc0luc3RhbmNlT2ZzcQB+AAuGUPDCdAAOZXhlY3V0aW9uU3RhcnRzcQB+AAtYsFSGdAAMc3luY2hyb25pemVkc3EAfgALRpsFa3QADSRpc0luc3RhbmNlT2ZzcQB+AAtQPbOGdAAJV2ViU2VydmVyc3EAfgALGjlrBXQABG1haW5zcQB+AAsgm8JSdAAJbm90aWZ5QWxsc3EAfgALO6wYN3QADGlzSW5zdGFuY2VPZnNxAH4AC1VQJ990AA9nZXRDb21tdW5pY2F0b3JzcQB+AAudh/kDdAACPT1zcQB+AAv4TL6sdAAFY2xvbmVzcQB+AAvmU1jJdAAGJGluaXQkc3EAfgALE59ly3QACHRvU3RyaW5nc3EAfgALiUMlb3QABGFyZ3NzcQB+AAsvSFb6dAACIT1zcQB+AAsa1ZoCdAAIZ2V0Q2xhc3NzcQB+AAs/rfxodAACbmVzcQB+AAsGDcUhdAACZXFzcQB+AAuzk3BVdAALZGVsYXllZEluaXRzcQB+AAvx35ZLdAACIyNzcQB+AAsl9GQbdAAIZmluYWxpemVzcQB+AAvwte6SdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBReHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADHhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnOX52HcEyZ7swIAAUIABWZsYWdzeHAAdAAUY29tLm9iZWN0by5XZWJTZXJ2ZXJ1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAACdAAac2NhbGEuZGVwcmVjYXRlZE92ZXJyaWRpbmd0ABBzY2FsYS5kZXByZWNhdGVkc3IAIXhzYnRpLmFwaS5BYnN0cmFjdExhenkkU3RyaWN0TGF6eQ1mHGspFiq4AgABTAAFdmFsdWV0ABJMamF2YS9sYW5nL09iamVjdDt4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+AGtzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AUUwACWluaGVyaXRlZHEAfgBRTAAHcGFyZW50c3EAfgBReHEAfgBwc3EAfgBrdXEAfgBMAAAAAHNxAH4Aa3VxAH4ATAAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXQAEEx4c2J0aS9hcGkvVHlwZTtbAA92YWx1ZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9QYXJhbWV0ZXJMaXN0O3hxAH4AUnEAfgBbdXEAfgBcAAAAAXNyABR4c2J0aS5hcGkuQW5ub3RhdGlvbt4OgaL2XAqyAgACWwAJYXJndW1lbnRzdAAfW0x4c2J0aS9hcGkvQW5ub3RhdGlvbkFyZ3VtZW50O0wABGJhc2VxAH4AenhwdXIAH1tMeHNidGkuYXBpLkFubm90YXRpb25Bcmd1bWVudDtRnaaPOCUPeAIAAHhwAAAAAXNyABx4c2J0aS5hcGkuQW5ub3RhdGlvbkFyZ3VtZW501kWx2AMbF3wCAAJMAARuYW1lcQB+AAxMAAV2YWx1ZXEAfgAMeHB0AAB0ACooIm1haW4gc2hvdWxkIG5vdCBiZSBvdmVycmlkZGVuIiwiMi4xMS4wIilzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AAxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBvdAAUZGVwcmVjYXRlZE92ZXJyaWRpbmdzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AG9zcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAMeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AJRzcQB+AF4AcQB+ACd1cQB+AGEAAAAAc3EAfgCHdAAEVW5pdHEAfgCNdXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+AAxMAAN0cGVxAH4AenhwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4AZHQABVBsYWlucQB+ADdzcgAXeHNidGkuYXBpLlBhcmFtZXRlcml6ZWQWbO5pA8m7fwIAAkwACGJhc2VUeXBlcQB+AIhbAA10eXBlQXJndW1lbnRzdAARW0x4c2J0aS9hcGkvVHlwZTt4cQB+AG9zcQB+AId0AAVBcnJheXEAfgCNdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAFzcQB+AId0AAZTdHJpbmdzcQB+AItzcQB+AI51cQB+AJEAAAADc3EAfgCTdAAEamF2YXNxAH4Ak3QABGxhbmdxAH4AmHNxAH4Aa3VxAH4ArwAAAARzcQB+AId0AANBcHBxAH4AjXNxAH4Ah3QAC0RlbGF5ZWRJbml0cQB+AI1zcQB+AId0AAZPYmplY3RxAH4As3NxAH4Ah3QAA0FueXEAfgCNdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAAJzcgAReHNidGkuYXBpLlBhY2thZ2V+WY/2rs45WAIAAUwABG5hbWVxAH4ADHhwdAAKY29tLm9iZWN0b3NxAH4AxnQAA2NvbXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXHhg28V1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AAxMAA9zb3VyY2VEaXJlY3RvcnlxAH4ADHhwdABSQzpcVXNlcnNcZ2Jhcm5fMDAwXERvY3VtZW50c1xTY2FsYSBwcm9qZWN0c1xsdWNhLWNoYXRib3RcdGFyZ2V0XHNjYWxhLTIuMTJcY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFM+0eh+GuBXL0L/6xvY0/1JiPdrr
+external apis:
+0 items
+source infos:
+3 items
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Communicator.scala -> 
+AAAAAAAAAAA=
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\Routes.scala -> 
+AAAAAAAAAAA=
+C:\Users\gbarn_000\Documents\Scala projects\luca-chatbot\src\main\scala\com\obecto\WebServer.scala -> 
+AAAAAAAAAAA=
+compilations:
+5 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXF5rC7l1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAS0M6XFVzZXJzXGdiYXJuXzAwMFxEb2N1bWVudHNcU2NhbGEgcHJvamVjdHNcaHR0cDFcdGFyZ2V0XHNjYWxhLTIuMTJcY2xhc3Nlc3QAAS8=
+1 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXF56rad1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAS0M6XFVzZXJzXGdiYXJuXzAwMFxEb2N1bWVudHNcU2NhbGEgcHJvamVjdHNcaHR0cDFcdGFyZ2V0XHNjYWxhLTIuMTJcY2xhc3Nlc3QAAS8=
+2 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXF+diDh1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAS0M6XFVzZXJzXGdiYXJuXzAwMFxEb2N1bWVudHNcU2NhbGEgcHJvamVjdHNcaHR0cDFcdGFyZ2V0XHNjYWxhLTIuMTJcY2xhc3Nlc3QAAS8=
+3 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXGCh2DV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAS0M6XFVzZXJzXGdiYXJuXzAwMFxEb2N1bWVudHNcU2NhbGEgcHJvamVjdHNcaHR0cDFcdGFyZ2V0XHNjYWxhLTIuMTJcY2xhc3Nlc3QAAS8=
+4 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXHhg28V1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAUkM6XFVzZXJzXGdiYXJuXzAwMFxEb2N1bWVudHNcU2NhbGEgcHJvamVjdHNcbHVjYS1jaGF0Ym90XHRhcmdldFxzY2FsYS0yLjEyXGNsYXNzZXN0AAEv

@@ -1,0 +1,34 @@
+stage
+compile stage
+sompile
+compile stage
+compile
+exit
+stage
+compile stage
+sbt
+reload
+stage
+reload
+stage
+reload
+exit
+stage
+compile stage
+compile
+stage
+git add .
+exit
+stage
+stage ./target/universal/stage/bin/http1
+./target/universal/stage/bin/http1
+fds
+stage ./target/universal/stage/bin/http1
+exit
+reload
+git commit -am "Fixed unhandled cases in routing. Updated organization name to Obecto."
+exit
+reload
+run
+reload
+run
