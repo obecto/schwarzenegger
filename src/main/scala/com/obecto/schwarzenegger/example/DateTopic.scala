@@ -10,7 +10,7 @@ class DateTopic extends Topic {
 
   // override intentDetector =  someIntentDetector
 
-subscribeFor("date")
+  subscribeFor("date")
 
   startWith(Waiting, EmptyTransitionData)
 

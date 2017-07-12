@@ -1,6 +1,7 @@
 package com.obecto.schwarzenegger
 
 import akka.util.Timeout
+
 import scala.concurrent.duration._
 
 /**

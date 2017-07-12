@@ -2,14 +2,11 @@ package com.obecto.schwarzenegger
 
 import akka.actor.{ActorSystem, Props}
 import akka.stream.ActorMaterializer
-import com.typesafe.config.ConfigFactory
 import com.obecto.schwarzenegger.communicators._
 import com.obecto.schwarzenegger.example.{DateTopic, DefaultTopic, ExampleTopic}
 import com.obecto.schwarzenegger.intent_detection.GoogleIntentDetector
 import com.obecto.schwarzenegger.translators.{GoogleTranslator, Translator}
-
-import scala.concurrent.duration._
-import scala.concurrent.duration.Duration
+import com.typesafe.config.ConfigFactory
 
 /**
   * Created by gbarn_000 on 6/12/2017.
@@ -19,7 +16,7 @@ object Arnold extends App {
   implicit val materializer = ActorMaterializer()
   implicit val executionContext = system.dispatcher
 
- val config = ConfigFactory.load()
+  val config = ConfigFactory.load()
 
   val fbVerifyToken: String = config.getString("fb.verify_token")
   val fbAccessToken: String = config.getString("fb.access_token")
@@ -33,17 +30,17 @@ object Arnold extends App {
   Keys.GOOGLE_TRANSLATE_TOKEN = googleTranslateToken
   Keys.API_AI_TOKEN = googleApiAi
 
-//  val messangerCommunicator = system.actorOf(Communicator.props(classOf[MessangerCommunicator],
-//    DefaultServerConfig(httpInterface, httpPort)),"MessangerCommunicator")
-  val consoleCommunicator = system.actorOf(Props[ConsoleCommunicator],"ConsoleCommunicator")
-  val googleTranslator = system.actorOf(Translator.props(classOf[GoogleTranslator]),"GoogleTranslate")
+  //  val messangerCommunicator = system.actorOf(Communicator.props(classOf[MessangerCommunicator],
+  //    DefaultServerConfig(httpInterface, httpPort)),"MessangerCommunicator")
+  val consoleCommunicator = system.actorOf(Props[ConsoleCommunicator], "ConsoleCommunicator")
+  val googleTranslator = system.actorOf(Translator.props(classOf[GoogleTranslator]), "GoogleTranslate")
 
   val googleIntentDetectorType = classOf[GoogleIntentDetector]
   val googleTranslatorType = classOf[GoogleTranslator]
   val list = List(
     TopicDescriptorType(classOf[ExampleTopic]),
     TopicDescriptorType(classOf[DateTopic]),
-   TopicDescriptorType(classOf[DefaultTopic],isStatic = true)
+    TopicDescriptorType(classOf[DefaultTopic], isStatic = true)
   )
 
   val engine = system.actorOf(Engine.props(consoleCommunicator, googleTranslatorType, googleIntentDetectorType, list), "Engine")

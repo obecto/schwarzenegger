@@ -6,6 +6,7 @@ import com.obecto.schwarzenegger.Topic.ClearCache
 import com.obecto.schwarzenegger.intent_detection.{IntentDetector, IntroduceIntentDetector}
 import com.obecto.schwarzenegger.messages.{MessageInternal, MessageProcessed}
 import com.obecto.schwarzenegger.translators.Translator
+
 import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
 import scala.concurrent.ExecutionContext.Implicits.global
@@ -52,7 +53,7 @@ class Conversation(senderId: String, topicDescriptorTypes: List[TopicDescriptorT
 
   def addNext(topicClass: Class[_ <: Topic], isStatic: Boolean): Unit = {
     if (sameTypeTopicExists(topicClass)) {
-    //  println("Topic class EXIST!!!!!!!!!!!!!!!!!!!!!")
+      //  println("Topic class EXIST!!!!!!!!!!!!!!!!!!!!!")
       throw new IllegalArgumentException("Topic of same type already exist!")
     }
     val topicActor = context.actorOf(Topic.props(topicClass), topicClass.getSimpleName)
@@ -95,7 +96,7 @@ class Conversation(senderId: String, topicDescriptorTypes: List[TopicDescriptorT
       val translateFuture = translator ? text
       translateFuture.onComplete {
         case Success(translatedText: String) =>
-      //    println("Translated text: " + translatedText)
+          //    println("Translated text: " + translatedText)
           findAndSwitchHandlingTopic(translatedText)
         case Failure(fail) => //println("Could not translate text : " + fail.getMessage)
       }
@@ -126,7 +127,7 @@ class Conversation(senderId: String, topicDescriptorTypes: List[TopicDescriptorT
   }
 
   def changeData(key: String, data: SharedData): Unit = {
-   // println("Shared data is being changed..." + " Key: " + key + " Data: " + data)
+    // println("Shared data is being changed..." + " Key: " + key + " Data: " + data)
     sharedData.get(key) match {
       case Some(dataAndSubscribers) =>
         dataAndSubscribers.optionalData = Some(data)
@@ -203,7 +204,7 @@ class Conversation(senderId: String, topicDescriptorTypes: List[TopicDescriptorT
           if (topicIndex > 0 && !topicDescriptor.isStatic) {
             topicDescriptors.-=(topicDescriptor)
             topicDescriptors.+=:(topicDescriptor)
-           // println("Order of topics is changed to: " + topicDescriptors)
+            // println("Order of topics is changed to: " + topicDescriptors)
           }
           return
         }
@@ -229,16 +230,16 @@ object Conversation {
     for (conversationIndex <- activeConversations.indices) {
       val currentConversation = activeConversations(conversationIndex)
       if (currentConversation.path.name.equals(senderId)) {
-      //  println("found conversation for sender id: " + senderId)
+        //  println("found conversation for sender id: " + senderId)
         if (activeConversations.lengthCompare(1) > 0) {
           activeConversations.-=(currentConversation)
           activeConversations.+=:(currentConversation)
-        //  println("Active conversations changed: " + activeConversations)
+          //  println("Active conversations changed: " + activeConversations)
         }
         return currentConversation
       }
     }
-   // println("No conversation for sender id and creating new... " + senderId)
+    // println("No conversation for sender id and creating new... " + senderId)
     val descriptorTypes = conversationParams.descriptorTypes
     val system = conversationParams.system
     val newConversation = system.actorOf(props(senderId, descriptorTypes, conversationParams), senderId)

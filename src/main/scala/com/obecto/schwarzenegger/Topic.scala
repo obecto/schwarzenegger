@@ -31,7 +31,7 @@ abstract class Topic extends FSM[Topic.State, Topic.TransitionData] with Default
 
   whenUnhandled {
     case Event(message: MessageInternal, _) =>
-    //  println("HandleMessage and trying to detect intent " + message + " and sender is : " + sender())
+      //  println("HandleMessage and trying to detect intent " + message + " and sender is : " + sender())
       currentSender = sender()
       detectIntent(message)
       stay()
@@ -92,10 +92,10 @@ abstract class Topic extends FSM[Topic.State, Topic.TransitionData] with Default
     val answer = intentDetector ? message
     answer.onComplete {
       case Success(response: IntentData) =>
-       // println("Response from intent detector is : " + response)
+        // println("Response from intent detector is : " + response)
         self ! response
       case Failure(fail) =>
-       // println("Unable to get response from intent detector" + fail)
+        // println("Unable to get response from intent detector" + fail)
         sendTextResponse("Something went wrong...")
     }
   }
@@ -116,14 +116,21 @@ abstract class Topic extends FSM[Topic.State, Topic.TransitionData] with Default
 object Topic {
 
   def props(topicType: Class[_ <: Topic]): Props = Props.apply(topicType)
+
   sealed trait TransitionData
+
   trait State
+
   case object Waiting extends State
+
   case object ClearCache extends State
+
   case object EmptyTransitionData extends TransitionData
 
 }
 
 case class Result(isHandled: Boolean, intentDetectorCache: String = "")
+
 case class TopicDescriptorType(topicClass: Class[_ <: Topic], isStatic: Boolean = false)
+
 case class TopicDescriptor(fsm: ActorRef, isStatic: Boolean = false)
