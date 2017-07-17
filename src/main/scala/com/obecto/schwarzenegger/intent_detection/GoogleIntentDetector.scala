@@ -6,7 +6,7 @@ import akka.http.scaladsl.model.MediaTypes.`application/json`
 import akka.http.scaladsl.model.headers.OAuth2BearerToken
 import akka.http.scaladsl.model.{HttpEntity, HttpRequest, headers}
 import akka.util.ByteString
-import com.obecto.schwarzenegger.messages.MessageInternal
+import com.obecto.schwarzenegger.messages.HandleMessage
 import com.obecto.schwarzenegger.{Config, Keys}
 import spray.json._
 
@@ -57,12 +57,12 @@ class GoogleIntentDetector extends IntentDetector with DefaultJsonProtocol {
     }
   }
 
-  override def detectIntent(message: MessageInternal): Future[IntentData] = {
+  override def detectIntent(message: String): Future[IntentData] = {
     val authorization = headers.Authorization(OAuth2BearerToken(apiAiToken))
     val body =
       raw"""{
                       "query": [
-                          "${message.text}"
+                          "${message}"
                       ],
                       "lang": "en",
                       "sessionId": "${context.parent.path.name}"

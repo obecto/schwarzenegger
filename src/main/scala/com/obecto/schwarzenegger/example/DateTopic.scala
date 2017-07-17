@@ -1,14 +1,50 @@
 package com.obecto.schwarzenegger.example
 
 import com.obecto.schwarzenegger.Topic
-import com.obecto.schwarzenegger.Topic.{EmptyTransitionData, Waiting}
+import com.obecto.schwarzenegger.Topic.EmptyTransitionData
 
 /**
   * Created by gbarn_000 on 6/16/2017.
   */
 class DateTopic extends Topic {
 
+  startWith(General, EmptyTransitionData)
+
+
+  onTransition {
+    case x -> General =>
+      println("Date topic general ")
+
+      if(x.equals(General)){
+        sendTextResponse("zdrasti blablbla, DATE topic activated",withoutRegisteringMessageHandled = true)
+      }
+
+      sendTextResponse("freelancer li si",withoutRegisteringMessageHandled = true)
+  }
+
+  when(General) {
+    receiveEvent andThen {
+      case "greetings" =>
+        sendTextResponse("zdrasti :)")
+        stay()
+
+      case "general.positive" =>
+        sendTextResponse("blabla a imash li registraciq bulstat")
+        goto(HaveBulstat)
+
+      case "general.negative" =>
+        sendTextResponse("za kakvo iskash da si govorim")
+        goto(General)
+
+      case _ =>
+        sendTextResponse("ne razbrah dali si freelancer")
+        stay()
+    }
+  }
+
+
   // override intentDetector =  someIntentDetector
+/*
 
   subscribeFor("date")
 
@@ -48,10 +84,13 @@ class DateTopic extends Topic {
         stay()
     }
   }
+*/
 
 
   //override def setIntentDetector(intentDetector : ActorRef = null): Unit = {}
 
 
-  initialize()
+  //initialize()
 }
+
+case object Waiting extends Topic.State

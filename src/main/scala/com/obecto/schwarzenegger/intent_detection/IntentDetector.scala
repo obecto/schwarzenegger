@@ -3,7 +3,7 @@ package com.obecto.schwarzenegger.intent_detection
 import akka.actor.{Actor, ActorRef, Props}
 import akka.http.scaladsl.Http
 import akka.stream.{ActorMaterializer, ActorMaterializerSettings}
-import com.obecto.schwarzenegger.messages.MessageInternal
+import com.obecto.schwarzenegger.messages.HandleMessage
 
 import scala.concurrent.Future
 import scala.util.{Failure, Success}
@@ -20,14 +20,14 @@ abstract class IntentDetector extends Actor {
   val http = Http(system)
   var intentCache: Option[IntentCache] = None
 
-  def detectIntent(message: MessageInternal): Future[IntentData]
+  def detectIntent(message: String): Future[IntentData]
 
   def extractIntentData(json: String): IntentData
 
   def resetContext(context: Option[String] = None)
 
   def receive = {
-    case message: MessageInternal =>
+    case message: String =>
       val currentSender = sender()
       intentCache match {
         case Some(cache) =>
@@ -37,12 +37,12 @@ abstract class IntentDetector extends Actor {
           val intentFuture: Future[IntentData] = detectIntent(message)
           intentFuture.onComplete {
             case Success(intentData: IntentData) =>
-              intentCache = Some(IntentCache(message.text, intentData))
+              intentCache = Some(IntentCache(message, intentData))
               currentSender ! intentData
             case Failure(failure) =>
               println("Unable to detect intent... " + failure.getMessage)
               val emptyIntentData = IntentData(IntentDetector.INTENT_UNKNOWN, Map())
-              intentCache = Some(IntentCache(message.text, emptyIntentData))
+              intentCache = Some(IntentCache(message, emptyIntentData))
               currentSender ! emptyIntentData
           }
       }

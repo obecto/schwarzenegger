@@ -1,0 +1,13 @@
+http {
+  interface = "0.0.0.0"
+  port = 9000
+}
+
+fb{
+  access_token = "your acces token"
+  verify_token = "your verify token"
+}
+google{
+  apiai = "api ai token"
+  translate = "translate token"
+}

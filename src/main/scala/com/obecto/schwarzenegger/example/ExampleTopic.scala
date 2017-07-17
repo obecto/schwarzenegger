@@ -1,7 +1,7 @@
 package com.obecto.schwarzenegger.example
 
 
-import com.obecto.schwarzenegger.Topic.{EmptyTransitionData, Waiting}
+import com.obecto.schwarzenegger.Topic.EmptyTransitionData
 import com.obecto.schwarzenegger.intent_detection.IntentData
 import com.obecto.schwarzenegger.{DataChanged, Topic}
 

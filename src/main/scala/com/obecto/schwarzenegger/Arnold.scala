@@ -3,7 +3,7 @@ package com.obecto.schwarzenegger
 import akka.actor.{ActorSystem, Props}
 import akka.stream.ActorMaterializer
 import com.obecto.schwarzenegger.communicators._
-import com.obecto.schwarzenegger.example.{DateTopic, DefaultTopic, ExampleTopic}
+import com.obecto.schwarzenegger.example.{DateTopic, DefaultTopic, ExampleTopic, Introduce}
 import com.obecto.schwarzenegger.intent_detection.GoogleIntentDetector
 import com.obecto.schwarzenegger.translators.{GoogleTranslator, Translator}
 import com.typesafe.config.ConfigFactory
@@ -38,7 +38,7 @@ object Arnold extends App {
   val googleIntentDetectorType = classOf[GoogleIntentDetector]
   val googleTranslatorType = classOf[GoogleTranslator]
   val list = List(
-    TopicDescriptorType(classOf[ExampleTopic]),
+    TopicDescriptorType(classOf[Introduce]),
     TopicDescriptorType(classOf[DateTopic]),
     TopicDescriptorType(classOf[DefaultTopic], isStatic = true)
   )

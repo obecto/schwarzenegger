@@ -11,7 +11,7 @@ import akka.http.scaladsl.server.{Directives, ExceptionHandler, Route}
 import akka.stream.{ActorMaterializer, ActorMaterializerSettings}
 import akka.util.{ByteString, Timeout}
 import com.obecto.schwarzenegger.Keys
-import com.obecto.schwarzenegger.messages.MessageExternal
+import com.obecto.schwarzenegger.messages.MessageReceived
 import spray.json.{DefaultJsonProtocol, JsArray, JsObject, JsString}
 
 import scala.concurrent.Future
@@ -120,7 +120,7 @@ class MessangerCommunicator(server: Option[Future[ServerBinding]] = None, server
                           val message = eventFields("message").asJsObject.fields("text").convertTo[String]
 
                           println("SenderId is : " + senderId + " And message is : " + message)
-                          self ! MessageExternal(message, senderId)
+                          self ! MessageReceived(message, senderId)
                       }
                       case _ => complete("Not matched anything")
                     }

@@ -9,6 +9,6 @@ import scala.concurrent.duration._
   */
 object Config {
 
-  final lazy val REQUEST_TIMEOUT = Timeout(5.second)
+  final lazy val REQUEST_TIMEOUT = Timeout(5.seconds)
 
 }

@@ -4,7 +4,7 @@ import akka.actor.{Actor, ActorRef, Props}
 import akka.http.scaladsl.Http.ServerBinding
 import akka.http.scaladsl.HttpExt
 import com.obecto.schwarzenegger.Engine.IntroduceEngine
-import com.obecto.schwarzenegger.messages.{MessageExternal, MessageProcessed}
+import com.obecto.schwarzenegger.messages.{MessageReceived, MessageProcessed}
 
 import scala.concurrent.Future
 
@@ -26,8 +26,8 @@ trait Communicator extends Actor {
   def receive = {
     customReceive orElse {
       case IntroduceEngine(_engine) => engine = _engine
-      case MessageExternal(text, senderId) =>
-        engine ! MessageExternal(text, senderId)
+      case MessageReceived(text, senderId) =>
+        engine ! MessageReceived(text, senderId)
       case MessageProcessed(text, senderId) =>
         sendTextResponse(text, senderId)
     }

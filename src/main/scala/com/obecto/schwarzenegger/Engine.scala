@@ -2,7 +2,7 @@ package com.obecto.schwarzenegger
 
 import akka.actor.{Actor, ActorRef, Props}
 import com.obecto.schwarzenegger.intent_detection.IntentDetector
-import com.obecto.schwarzenegger.messages.{MessageExternal, MessageProcessed}
+import com.obecto.schwarzenegger.messages.{MessageReceived, MessageProcessed}
 import com.obecto.schwarzenegger.translators.Translator
 import spray.json._
 
@@ -18,7 +18,7 @@ class Engine(communicator: ActorRef, translatorType: Class[_ <: Translator], int
   communicator ! IntroduceEngine(self)
 
   def receive = {
-    case MessageExternal(text, senderId) =>
+    case MessageReceived(text, senderId) =>
       implicit val conversationParams: ConversationParams = ConversationParams(topicDescriptorTypes, self, intentDetectorType, translatorType, system)
       val currentConversation = Conversation.getOrCreate(senderId)
       currentConversation ! text

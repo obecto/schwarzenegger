@@ -1,5 +1,7 @@
 package com.obecto.schwarzenegger.example
 
+import java.util.UUID
+
 import com.obecto.schwarzenegger.Topic
 import com.obecto.schwarzenegger.Topic.{EmptyTransitionData, State}
 
@@ -8,12 +10,35 @@ import com.obecto.schwarzenegger.Topic.{EmptyTransitionData, State}
   */
 class Introduce extends Topic {
 
-  // sendTextResponse("zdrasti blablbla")
+  /*
+  setInitialState(General)
+
+  override def topicActivated(): Unit = {
+   // interactionID = new ID
+    sendTextResponse("zdrasti blablbla, topic activated")
+  }
+
+  override def topicDeactivated(): Unit = {
+    sendTextResponse("Topic is deactivated")
+  }
+  */
+
   startWith(General, EmptyTransitionData)
 
-  when(General) {
-    // sendTextResponse("freelancer li si")
 
+  onTransition {
+    case x -> General =>
+      println("Entering general from ")
+      println(x)
+
+      if(x.equals(General)){
+        sendTextResponse("zdrasti blablbla, topic activated",withoutRegisteringMessageHandled = true)
+      }
+
+      sendTextResponse("freelancer li si",withoutRegisteringMessageHandled = true)
+  }
+
+  when(General) {
     receiveEvent andThen {
       case "greetings" =>
         sendTextResponse("zdrasti :)")
@@ -71,6 +96,8 @@ class Introduce extends Topic {
     }
   }
 
+  //TODO Init function calls goto("state you started with")
+  initialize()
 
 }
 

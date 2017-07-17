@@ -4,7 +4,7 @@ import akka.actor.{Actor, ActorRef, ActorSystem, PoisonPill, Props}
 import akka.pattern._
 import com.obecto.schwarzenegger.Topic.ClearCache
 import com.obecto.schwarzenegger.intent_detection.{IntentDetector, IntroduceIntentDetector}
-import com.obecto.schwarzenegger.messages.{MessageInternal, MessageProcessed}
+import com.obecto.schwarzenegger.messages.{HandleMessage, MessageProcessed}
 import com.obecto.schwarzenegger.translators.Translator
 
 import scala.collection.mutable
@@ -89,7 +89,7 @@ class Conversation(senderId: String, topicDescriptorTypes: List[TopicDescriptorT
 
   def receive = {
 
-    case MessageInternal(text) =>
+    case HandleMessage(text) =>
       engine ! MessageProcessed(text, senderId)
 
     case text: String =>
@@ -193,11 +193,12 @@ class Conversation(senderId: String, topicDescriptorTypes: List[TopicDescriptorT
 
   def findAndSwitchHandlingTopic(text: String): Unit = {
     println("Conversation received text to handle: " + text)
+
     try {
       for (topicIndex: Int <- topicDescriptors.indices) {
         val topicDescriptor = topicDescriptors(topicIndex)
         //println("Descriptor trying to handle message: " + topicDescriptor.fsm.path)
-        val topicResponseFuture = Patterns.ask(topicDescriptor.fsm, MessageInternal(text), timeout.duration)
+        val topicResponseFuture = Patterns.ask(topicDescriptor.fsm, HandleMessage(text), timeout.duration)
         val isHandled: Boolean = Await.result(topicResponseFuture, timeout.duration).asInstanceOf[Boolean]
         println("Is message handled from topic " + topicDescriptor.fsm.path.name + " ? " + isHandled)
         if (isHandled) {

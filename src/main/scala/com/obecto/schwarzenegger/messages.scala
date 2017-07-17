@@ -5,10 +5,10 @@ package com.obecto.schwarzenegger
   */
 object messages {
 
-  case class MessageExternal(text: String, senderId: String)
+  case class MessageReceived(text: String, senderId: String)
 
   case class MessageProcessed(text: String, senderId: String)
 
-  case class MessageInternal(text: String)
+  case class HandleMessage(text: String)
 
 }

@@ -1,7 +1,7 @@
 package com.obecto.schwarzenegger.example
 
 import com.obecto.schwarzenegger.Topic
-import com.obecto.schwarzenegger.Topic.{EmptyTransitionData, Waiting}
+import com.obecto.schwarzenegger.Topic.EmptyTransitionData
 
 /**
   * Created by Ioan on 22-Jun-17.
@@ -11,6 +11,11 @@ class DefaultTopic extends Topic {
 
 
   startWith(Waiting, EmptyTransitionData)
+
+  onTransition{
+    case x -> Waiting =>
+      println("Hello from default topic")
+  }
 
 
   when(Waiting) {
@@ -22,5 +27,5 @@ class DefaultTopic extends Topic {
   }
   //override def setIntentDetector(intentDetector : ActorRef = null): Unit = {}
 
-  initialize()
+  //initialize()
 }
