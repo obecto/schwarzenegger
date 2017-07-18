@@ -10,21 +10,8 @@ import com.obecto.schwarzenegger.Topic.{EmptyTransitionData, State}
   */
 class Introduce extends Topic {
 
-  /*
-  setInitialState(General)
-
-  override def topicActivated(): Unit = {
-   // interactionID = new ID
-    sendTextResponse("zdrasti blablbla, topic activated")
-  }
-
-  override def topicDeactivated(): Unit = {
-    sendTextResponse("Topic is deactivated")
-  }
-  */
 
   startWith(General, EmptyTransitionData)
-
 
   onTransition {
     case x -> General =>

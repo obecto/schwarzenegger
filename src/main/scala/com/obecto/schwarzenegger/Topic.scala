@@ -37,22 +37,6 @@ abstract class Topic extends FSM[Topic.State, Topic.TransitionData] with Default
   var currentSender: ActorRef = _
   var lastIntentData: IntentData = _
 
-  /*
-  var lastActiveState: Option[Topic.State] = None
-
-  startWith(InActive, EmptyTransitionData)
-
-  when(InActive){
-    case Event(ActivateTopic, _) =>
-      if (lastActiveState.nonEmpty){
-        topicActivated()
-        goto(lastActiveState.get)
-      } else {
-        logger.warning("No lastActiveState recorder. Staying in InActive state")
-        stay()
-      }
-  }
-  */
 
   whenUnhandled {
     case Event(message: HandleMessage, _) =>
@@ -68,44 +52,14 @@ abstract class Topic extends FSM[Topic.State, Topic.TransitionData] with Default
     case Event(ClearCache, _) =>
       intentDetector ! ClearIntentCache
       stay()
-
-    /*
-    case Event(DeactivateTopic, _) =>
-      if(!this.stateName.equals(InActive)){
-        topicDeactivated()
-        lastActiveState = Some(this.stateName)
-        goto(InActive)
-      }
-      stay()
-    */
   }
-
-  /*
-  def topicActivated(): Unit ={
-      currentSender ! Activated
-  }
-
-  def topicDeactivated(): Unit ={
-
-  }
-
-  def setInitialState(state: Topic.State): Unit = {
-    lastActiveState = Some(state)
-  }
-  */
 
   def receiveEvent: PartialFunction[Event, String] = {
     case Event(response: IntentData, _) =>
       println(response)
       lastIntentData = response
-      //TODO Check if current state can handle anything and call initialize if it cans
-      /*if(response.intent.equals("greetings")){
-        initialize()
-      }*/
       response.intent
-
   }
-
 
   def dataChanged: PartialFunction[Event, State] = {
     case Event(dataChanged: DataChanged, _) =>
@@ -162,15 +116,6 @@ abstract class Topic extends FSM[Topic.State, Topic.TransitionData] with Default
     context.parent ! HandleMessage(text)
   }
 
- /* val sentMessageTokens:Map[UUID, Boolean] = Map.empty
-
-  def sendTextResponseOnce(token:UUID, text: String, withoutRegisteringMessageHandled: Boolean = false): Unit = {
-    if(!sentMessageTokens(token)){
-      sentMessageTokens(token) = true;
-      sendTextResponse(text, withoutRegisteringMessageHandled);
-    }
-  }*/
-
   def registerMessageHandled(): Unit = {
     intentDetector ! ClearIntentCache
     currentSender ! true
@@ -189,9 +134,6 @@ object Topic {
 
   case object ActivateTopic
   case object DeactivateTopic
-
-  //case object Activated
-  //case object Deactivated
 
   case object ClearCache
 

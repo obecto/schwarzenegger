@@ -12,13 +12,10 @@ import scala.concurrent.Future
   * Created by gbarn_000 on 6/12/2017.
   */
 trait Communicator extends Actor {
-  var http: HttpExt = _
+  def http: HttpExt = _
   var engine: ActorRef = _
-
   def customReceive: Receive = Map.empty
-
   def sendTextResponse(text: String, senderId: String): Unit
-
   def sendInteractiveResponse(response: Object, senderId: String) = ???
 
   def startDefaultServer(): Future[ServerBinding] = ???

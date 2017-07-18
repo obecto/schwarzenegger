@@ -9,10 +9,8 @@ import akka.http.scaladsl.HttpExt
   */
 
 trait Translator extends Actor {
-  val http: HttpExt
-
+  def http: HttpExt
   def translateText(text: String, sender: ActorRef)
-
   def extractDataFromTranslate(message: String): String
 }
 
