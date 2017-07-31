@@ -6,7 +6,6 @@ import akka.http.scaladsl.model.MediaTypes.`application/json`
 import akka.http.scaladsl.model.headers.OAuth2BearerToken
 import akka.http.scaladsl.model.{HttpEntity, HttpRequest, headers}
 import akka.util.ByteString
-import com.obecto.schwarzenegger.messages.HandleMessage
 import com.obecto.schwarzenegger.{Config, Keys}
 import spray.json._
 
@@ -24,6 +23,34 @@ class GoogleIntentDetector extends IntentDetector with DefaultJsonProtocol {
     throw new NoSuchElementException("No API.AI token found.")
   }
 
+  override def detectIntent(message: String): Future[IntentData] = {
+    val authorization = headers.Authorization(OAuth2BearerToken(apiAiToken))
+    val body =
+      raw"""{
+                      "query": [
+                          "${message}"
+                      ],
+                      "lang": "en",
+                      "sessionId": "${context.parent.path.name}"
+                  }"""
+
+    val topicResponseFuture = http.singleRequest(HttpRequest(
+      POST,
+      uri = "https://api.api.ai/v1/query?v=20150910",
+      entity = HttpEntity(`application/json`, body),
+      headers = List(authorization),
+      protocol = `HTTP/1.1`
+    ))
+
+    topicResponseFuture.flatMap {
+      response =>
+        response.entity.dataBytes.runFold(ByteString(""))(_ ++ _).flatMap(body => {
+          Future(extractIntentData(body.utf8String))
+        })
+    }
+  }
+
+  //TODO Extract intent data more beautifully
   override def extractIntentData(intentData: String): IntentData = {
     var intent: String = ""
     var params: Map[String, String] = Map()
@@ -54,33 +81,6 @@ class GoogleIntentDetector extends IntentDetector with DefaultJsonProtocol {
       IntentData(IntentDetector.INTENT_UNKNOWN, params)
     } else {
       IntentData(intent, params)
-    }
-  }
-
-  override def detectIntent(message: String): Future[IntentData] = {
-    val authorization = headers.Authorization(OAuth2BearerToken(apiAiToken))
-    val body =
-      raw"""{
-                      "query": [
-                          "${message}"
-                      ],
-                      "lang": "en",
-                      "sessionId": "${context.parent.path.name}"
-                  }"""
-
-    val topicResponseFuture = http.singleRequest(HttpRequest(
-      POST,
-      uri = "https://api.api.ai/v1/query?v=20150910",
-      entity = HttpEntity(`application/json`, body),
-      headers = List(authorization),
-      protocol = `HTTP/1.1`
-    ))
-
-    topicResponseFuture.flatMap {
-      response =>
-        response.entity.dataBytes.runFold(ByteString(""))(_ ++ _).flatMap(body => {
-          Future(extractIntentData(body.utf8String))
-        })
     }
   }
 

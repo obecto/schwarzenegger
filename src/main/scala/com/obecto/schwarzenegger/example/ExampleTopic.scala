@@ -18,7 +18,7 @@ class ExampleTopic extends Topic {
 
   override def dataChanged = {
     case Event(dataChanged: DataChanged, _) =>
-      sendTextResponse("data changed in ExampleTopic... " + dataChanged.key + " -> " + dataChanged.data, withoutRegisteringMessageHandled = true)
+      sendTextResponse("data changed in ExampleTopic... " + dataChanged.key + " -> " + dataChanged.data)
       stay()
   }
 
@@ -33,7 +33,7 @@ class ExampleTopic extends Topic {
     dataChanged orElse receiveEvent andThen {
       case "greetings" =>
         //Logic here
-        sendTextResponse("Zdrasti :)")
+        sendTextResponseAndRegisterMessageHandled("Zdrasti :)")
         // addTopic(classOf[NameTopic])
         stay() //or goto
 

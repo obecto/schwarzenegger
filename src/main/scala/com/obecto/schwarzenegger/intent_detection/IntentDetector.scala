@@ -3,7 +3,6 @@ package com.obecto.schwarzenegger.intent_detection
 import akka.actor.{Actor, ActorRef, Props}
 import akka.http.scaladsl.Http
 import akka.stream.{ActorMaterializer, ActorMaterializerSettings}
-import com.obecto.schwarzenegger.messages.HandleMessage
 
 import scala.concurrent.Future
 import scala.util.{Failure, Success}
@@ -19,6 +18,7 @@ abstract class IntentDetector extends Actor {
   implicit val materializer: ActorMaterializer = ActorMaterializer(ActorMaterializerSettings(system))
   val http = Http(system)
   var intentCache: Option[IntentCache] = None
+  var currentSender: ActorRef = _
 
   def detectIntent(message: String): Future[IntentData]
 
@@ -28,26 +28,53 @@ abstract class IntentDetector extends Actor {
 
   def receive = {
     case message: String =>
-      val currentSender = sender()
-      intentCache match {
-        case Some(cache) =>
-          //println("The message is the same as the cached one so we return the cache!")
-          currentSender ! IntentData(cache.intentData.intent, cache.intentData.params)
+      currentSender = sender()
+      extractCachedIntentData match {
+
+        case Some(intentData) =>
+          sendIntentDataToSender(intentData)
+
         case None =>
-          val intentFuture: Future[IntentData] = detectIntent(message)
-          intentFuture.onComplete {
+          detectIntent(message).onComplete {
             case Success(intentData: IntentData) =>
-              intentCache = Some(IntentCache(message, intentData))
-              currentSender ! intentData
+              onResponseIntentDetectionBehaviour(message, intentData)
             case Failure(failure) =>
-              println("Unable to detect intent... " + failure.getMessage)
-              val emptyIntentData = IntentData(IntentDetector.INTENT_UNKNOWN, Map())
-              intentCache = Some(IntentCache(message, emptyIntentData))
-              currentSender ! emptyIntentData
+              failureIntentDetectionBehaviour(message, failure)
           }
       }
+
     case ClearIntentCache =>
       intentCache = None
+  }
+
+  private def sendIntentDataToSender(intentData: IntentData): Unit = {
+    currentSender ! intentData
+  }
+
+  private def extractCachedIntentData: Option[IntentData] = {
+    intentCache match {
+      case Some(cache) =>
+        Some(IntentData(cache.intentData.intent, cache.intentData.params))
+      case None =>
+        None
+    }
+  }
+
+  private def failureIntentDetectionBehaviour(message: String, failure: Throwable): Unit = {
+    println("Unable to detect intent... " + failure.getMessage)
+    val emptyIntentData = IntentData(IntentDetector.INTENT_UNKNOWN, Map())
+    onResponseIntentDetectionBehaviour(message, emptyIntentData)
+  }
+
+  private def onResponseIntentDetectionBehaviour(message: String, intentData: IntentData): Unit = {
+    cacheIntent(message, intentData)
+    sendIntentDataToSender(intentData)
+  }
+
+  private def cacheIntent(message: String, intentData: IntentData): IntentCache = {
+    val newIntentCache = IntentCache(message, intentData)
+    intentCache = Some(newIntentCache)
+    newIntentCache
   }
 
 }
@@ -66,4 +93,4 @@ case class IntroduceIntentDetector(detector: ActorRef)
 
 case class IntentData(intent: String, params: Map[String, String])
 
-case class IntentCache(text: String, intentData: IntentData)
+case class IntentCache(message: String, intentData: IntentData)

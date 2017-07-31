@@ -1,16 +1,12 @@
 package com.obecto.schwarzenegger
 
 
-import java.util.UUID
-
 import akka.actor.{ActorRef, FSM, Props}
 import akka.event.Logging
-import akka.event.jul.Logger
 import akka.http.scaladsl.Http
 import akka.pattern._
 import akka.stream.{ActorMaterializer, ActorMaterializerSettings}
 import com.obecto.schwarzenegger.Topic._
-import com.obecto.schwarzenegger.example.General
 import com.obecto.schwarzenegger.intent_detection.{ClearIntentCache, IntentData, IntroduceIntentDetector}
 import com.obecto.schwarzenegger.messages.HandleMessage
 import spray.json.DefaultJsonProtocol
@@ -40,7 +36,6 @@ abstract class Topic extends FSM[Topic.State, Topic.TransitionData] with Default
 
   whenUnhandled {
     case Event(message: HandleMessage, _) =>
-      //  println("HandleMessage and trying to detect intent " + message + " and sender is : " + sender())
       currentSender = sender()
       detectIntent(message.text)
       stay()
@@ -64,12 +59,10 @@ abstract class Topic extends FSM[Topic.State, Topic.TransitionData] with Default
   def dataChanged: PartialFunction[Event, State] = {
     case Event(dataChanged: DataChanged, _) =>
       println("SharedData is changed: " + dataChanged)
-      //implicit val params = response.params
       stay()
   }
 
   def subscribeFor(key: String, initialData: Option[SharedData] = None): Unit = {
-    //println("Trying to subscribe... " + context.parent)
     context.parent ! Subscribe(key, initialData)
   }
 
@@ -85,7 +78,7 @@ abstract class Topic extends FSM[Topic.State, Topic.TransitionData] with Default
     context.parent ! Exterminate(self)
   }
 
-  def addTopic(topicClass: Class[_ <: Topic], isStatic: Boolean = false): Unit = {
+  def addTopicInConversation(topicClass: Class[_ <: Topic], isStatic: Boolean = false): Unit = {
     context.parent ! TopicDescriptorType(topicClass, isStatic)
   }
 
@@ -101,24 +94,25 @@ abstract class Topic extends FSM[Topic.State, Topic.TransitionData] with Default
     val answer = intentDetector ? message
     answer.onComplete {
       case Success(response: IntentData) =>
-        // println("Response from intent detector is : " + response)
         self ! response
       case Failure(fail) =>
-        // println("Unable to get response from intent detector" + fail)
-        sendTextResponse("Something went wrong...")
+        sendTextResponseAndRegisterMessageHandled("Something went wrong...")
     }
   }
 
-  def sendTextResponse(text: String, withoutRegisteringMessageHandled: Boolean = false): Unit = {
-    if (!withoutRegisteringMessageHandled) {
-      registerMessageHandled()
-    }
+  def sendTextResponseAndRegisterMessageHandled(text: String): Unit = {
+    registerMessageHandled()
+    sendTextResponse(text)
+  }
+
+  def sendTextResponse(text: String): Unit = {
     context.parent ! HandleMessage(text)
   }
 
+
   def registerMessageHandled(): Unit = {
-    intentDetector ! ClearIntentCache
     currentSender ! true
+    intentDetector ! ClearIntentCache
   }
 }
 

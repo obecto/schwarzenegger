@@ -2,7 +2,7 @@ package com.obecto.schwarzenegger
 
 import akka.actor.{Actor, ActorRef, Props}
 import com.obecto.schwarzenegger.intent_detection.IntentDetector
-import com.obecto.schwarzenegger.messages.{MessageReceived, MessageProcessed}
+import com.obecto.schwarzenegger.messages.{MessageProcessed, MessageReceived}
 import com.obecto.schwarzenegger.translators.Translator
 import spray.json._
 
@@ -13,7 +13,6 @@ class Engine(communicator: ActorRef, translatorType: Class[_ <: Translator], int
 
   implicit val system = context.system
   implicit val timeout = Config.REQUEST_TIMEOUT
-  //final implicit val materializer: ActorMaterializer = ActorMaterializer(ActorMaterializerSettings(system))
 
   communicator ! IntroduceEngine(self)
 

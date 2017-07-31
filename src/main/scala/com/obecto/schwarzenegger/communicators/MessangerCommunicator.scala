@@ -30,7 +30,7 @@ class MessangerCommunicator(server: Option[Future[ServerBinding]] = None, server
   implicit val timeout = Timeout(5.seconds)
   final implicit val materializer: ActorMaterializer = ActorMaterializer(ActorMaterializerSettings(context.system))
 
-  http = Http(context.system)
+  val http = Http(context.system)
 
 
   private var fbAccessToken: String = Keys.FB_ACCESS_TOKEN
@@ -57,38 +57,6 @@ class MessangerCommunicator(server: Option[Future[ServerBinding]] = None, server
     val defaultServer = http.bindAndHandle(routes, defaultServerConfig.interface, defaultServerConfig.port)
     println("Starting default server " + defaultServer.toString)
     defaultServer
-  }
-
-  override def sendTextResponse(text: String, senderId: String): Unit = {
-
-    println("Sending message with text : " + text + " and senderId:  " + senderId)
-
-    val uri: String = "https://graph.facebook.com/v2.6/me/messages?access_token=" + fbAccessToken
-    val stringEntity: String =
-      raw"""{
-                                          "recipient" : {
-                                              "id": "$senderId"
-                                           },
-                                           "message": {
-                                              "text": "$text"
-                                           }
-                                     }"""
-    println("URI IS : " + uri)
-    println("stringEntity is : " + stringEntity)
-
-    http.singleRequest(HttpRequest(
-      POST,
-      uri,
-      entity = HttpEntity(`application/json`, stringEntity),
-      protocol = `HTTP/1.1`
-    )).onComplete {
-      (response) =>
-        response.fold(
-          failure => println("OUR ERROR BODY IS : " + failure.getMessage),
-          success => success.entity.dataBytes.runFold(ByteString(""))(_ ++ _)
-            .foreach(body => println("OUR SUCCESS BODY IS : " + body.utf8String))
-        )
-    }
   }
 
   def routes: Route = {
@@ -132,6 +100,38 @@ class MessangerCommunicator(server: Option[Future[ServerBinding]] = None, server
           complete("Not matched anything")
         }
       }
+    }
+  }
+
+  override def sendTextResponse(text: String, senderId: String): Unit = {
+
+    println("Sending message with text : " + text + " and senderId:  " + senderId)
+
+    val uri: String = "https://graph.facebook.com/v2.6/me/messages?access_token=" + fbAccessToken
+    val stringEntity: String =
+      raw"""{
+                                          "recipient" : {
+                                              "id": "$senderId"
+                                           },
+                                           "message": {
+                                              "text": "$text"
+                                           }
+                                     }"""
+    println("URI IS : " + uri)
+    println("stringEntity is : " + stringEntity)
+
+    http.singleRequest(HttpRequest(
+      POST,
+      uri,
+      entity = HttpEntity(`application/json`, stringEntity),
+      protocol = `HTTP/1.1`
+    )).onComplete {
+      (response) =>
+        response.fold(
+          failure => println("OUR ERROR BODY IS : " + failure.getMessage),
+          success => success.entity.dataBytes.runFold(ByteString(""))(_ ++ _)
+            .foreach(body => println("OUR SUCCESS BODY IS : " + body.utf8String))
+        )
     }
   }
 }

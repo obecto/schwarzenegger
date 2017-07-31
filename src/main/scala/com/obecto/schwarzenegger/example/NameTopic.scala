@@ -19,10 +19,10 @@ class NameTopic extends Topic {
     receiveEvent andThen {
       case "introducing" =>
         userName = lastIntentData.params.getOrElse("name", "")
-        sendTextResponse(s"Are you sure your name is $userName?")
+        sendTextResponseAndRegisterMessageHandled(s"Are you sure your name is $userName?")
         goto(ConfirmName)
       case _ =>
-        sendTextResponse("Please, write your name!")
+        sendTextResponseAndRegisterMessageHandled("Please, write your name!")
 
         stay()
     }
@@ -31,13 +31,13 @@ class NameTopic extends Topic {
   when(ConfirmName) {
     receiveEvent andThen {
       case "confirm_name" =>
-        sendTextResponse("Ok")
+        sendTextResponseAndRegisterMessageHandled("Ok")
         println("Changing shared data with " + userName)
         changeData("user_name", UserName(userName))
         exterminate()
         stay()
       case _ =>
-        sendTextResponse("Please, confirm your name!")
+        sendTextResponseAndRegisterMessageHandled("Please, confirm your name!")
         stay()
     }
   }

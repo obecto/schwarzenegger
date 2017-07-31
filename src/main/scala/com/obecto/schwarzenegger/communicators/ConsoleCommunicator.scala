@@ -1,5 +1,6 @@
 package com.obecto.schwarzenegger.communicators
 
+import akka.http.scaladsl.HttpExt
 import com.obecto.schwarzenegger.messages.MessageReceived
 
 import scala.concurrent.duration._
@@ -30,5 +31,7 @@ class ConsoleCommunicator() extends Communicator {
   override def sendTextResponse(text: String, senderId: String): Unit = {
     println(Console.BLUE + text + Console.RESET)
   }
+
+  override def http: HttpExt = ???
 }
 

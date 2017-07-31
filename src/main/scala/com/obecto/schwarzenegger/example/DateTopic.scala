@@ -16,28 +16,28 @@ class DateTopic extends Topic {
       println("Date topic general ")
 
       if(x.equals(General)){
-        sendTextResponse("zdrasti blablbla, DATE topic activated",withoutRegisteringMessageHandled = true)
+        sendTextResponse("zdrasti blablbla, DATE topic activated")
       }
 
-      sendTextResponse("freelancer li si",withoutRegisteringMessageHandled = true)
+      sendTextResponse("freelancer li si")
   }
 
   when(General) {
     receiveEvent andThen {
       case "greetings" =>
-        sendTextResponse("zdrasti :)")
+        sendTextResponseAndRegisterMessageHandled("zdrasti :)")
         stay()
 
       case "general.positive" =>
-        sendTextResponse("blabla a imash li registraciq bulstat")
+        sendTextResponseAndRegisterMessageHandled("blabla a imash li registraciq bulstat")
         goto(HaveBulstat)
 
       case "general.negative" =>
-        sendTextResponse("za kakvo iskash da si govorim")
+        sendTextResponseAndRegisterMessageHandled("za kakvo iskash da si govorim")
         goto(General)
 
       case _ =>
-        sendTextResponse("ne razbrah dali si freelancer")
+        sendTextResponseAndRegisterMessageHandled("ne razbrah dali si freelancer")
         stay()
     }
   }

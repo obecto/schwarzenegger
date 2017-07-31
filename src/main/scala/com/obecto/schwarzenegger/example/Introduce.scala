@@ -1,7 +1,5 @@
 package com.obecto.schwarzenegger.example
 
-import java.util.UUID
-
 import com.obecto.schwarzenegger.Topic
 import com.obecto.schwarzenegger.Topic.{EmptyTransitionData, State}
 
@@ -19,28 +17,28 @@ class Introduce extends Topic {
       println(x)
 
       if(x.equals(General)){
-        sendTextResponse("zdrasti blablbla, topic activated",withoutRegisteringMessageHandled = true)
+        sendTextResponse("zdrasti blablbla, topic activated")
       }
 
-      sendTextResponse("freelancer li si",withoutRegisteringMessageHandled = true)
+      sendTextResponse("freelancer li si")
   }
 
   when(General) {
     receiveEvent andThen {
       case "greetings" =>
-        sendTextResponse("zdrasti :)")
+        sendTextResponseAndRegisterMessageHandled("zdrasti :)")
         stay()
 
       case "general.positive" =>
-        sendTextResponse("blabla a imash li registraciq bulstat")
+        sendTextResponseAndRegisterMessageHandled("blabla a imash li registraciq bulstat")
         goto(HaveBulstat)
 
       case "general.negative" =>
-        sendTextResponse("za kakvo iskash da si govorim")
+        sendTextResponseAndRegisterMessageHandled("za kakvo iskash da si govorim")
         goto(General)
 
       case _ =>
-        sendTextResponse("ne razbrah dali si freelancer")
+        sendTextResponseAndRegisterMessageHandled("ne razbrah dali si freelancer")
         stay()
     }
   }
@@ -48,15 +46,15 @@ class Introduce extends Topic {
   when(FreelanceType) {
     receiveEvent andThen {
       case "freelance.positive" =>
-        sendTextResponse("blabla a imash li registraciq bulstat")
+        sendTextResponseAndRegisterMessageHandled("blabla a imash li registraciq bulstat")
         goto(HaveBulstat)
 
       case "freelance.negative" =>
-        sendTextResponse("za kakvo iskash da si govorim")
+        sendTextResponseAndRegisterMessageHandled("za kakvo iskash da si govorim")
         goto(General)
 
       case _ =>
-        sendTextResponse("ne razbrah dali si freelancer")
+        sendTextResponseAndRegisterMessageHandled("ne razbrah dali si freelancer")
         stay()
 
     }
@@ -65,20 +63,20 @@ class Introduce extends Topic {
   when(HaveBulstat) {
     receiveEvent andThen {
       case "bulstat.positive" =>
-        sendTextResponse("iskash li da ti razkaja kakvo moga da napravq za teb")
+        sendTextResponseAndRegisterMessageHandled("iskash li da ti razkaja kakvo moga da napravq za teb")
         goto(General)
       case "bulstat.negative" =>
-        sendTextResponse("iskash li registraciq blabla")
+        sendTextResponseAndRegisterMessageHandled("iskash li registraciq blabla")
         //Open modal topic to introduce service
         goto(General)
 
       case "bulstat.unknown" =>
-        sendTextResponse("Az moga da provq dali go imash, no za celta shte mi trqbva ime i egn")
+        sendTextResponseAndRegisterMessageHandled("Az moga da provq dali go imash, no za celta shte mi trqbva ime i egn")
         // Proverka za bulstat v sistemata
         stay()
 
       case _ =>
-        sendTextResponse("Ne moga da produlja predi da mi kajesh dali imash bulstat")
+        sendTextResponseAndRegisterMessageHandled("Ne moga da produlja predi da mi kajesh dali imash bulstat")
         stay()
     }
   }

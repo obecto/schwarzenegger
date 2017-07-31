@@ -9,8 +9,8 @@ import com.obecto.schwarzenegger.translators.Translator
 
 import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
+import scala.concurrent.Await
 import scala.concurrent.ExecutionContext.Implicits.global
-import scala.concurrent.{Await, TimeoutException}
 import scala.util.{Failure, Success}
 
 /**
@@ -43,7 +43,9 @@ class Conversation(senderId: String, topicDescriptorTypes: List[TopicDescriptorT
       val currentDescriptorType = topicDescriptorTypes(descriptorIndex)
       val descriptorStaticFlag = currentDescriptorType.isStatic
       try {
-        addNext(currentDescriptorType.topicClass, descriptorStaticFlag)
+        val topicDescriptor = initializeTopicDescriptor(currentDescriptorType.topicClass, descriptorStaticFlag)
+        appendTopicDescriptorToBuffer(topicDescriptor)
+        introduceIntentDetectorToTopic(topicDescriptor.fsm, defaultIntentDetector)
       } catch {
         case illegalArgumentException: IllegalArgumentException =>
           illegalArgumentException.printStackTrace()
@@ -51,28 +53,8 @@ class Conversation(senderId: String, topicDescriptorTypes: List[TopicDescriptorT
     }
   }
 
-  def addNext(topicClass: Class[_ <: Topic], isStatic: Boolean): Unit = {
-    if (sameTypeTopicExists(topicClass)) {
-      //  println("Topic class EXIST!!!!!!!!!!!!!!!!!!!!!")
-      throw new IllegalArgumentException("Topic of same type already exist!")
-    }
-    val topicActor = context.actorOf(Topic.props(topicClass), topicClass.getSimpleName)
-    context.watch(topicActor)
-    topicDescriptors.+=(TopicDescriptor(topicActor, isStatic))
-    introduceToTopic(topicActor, defaultIntentDetector)
-  }
-
-  def introduceToTopic(topicFSM: ActorRef, intentDetector: ActorRef): Unit = {
-    topicFSM ! IntroduceIntentDetector(intentDetector)
-  }
-
-  def sameTypeTopicExists(topicClass: Class[_ <: Topic]): Boolean = {
-    for (topicDescriptor <- topicDescriptors) {
-      if (topicDescriptor.fsm.path.name.equals(topicClass.getSimpleName)) {
-        return true
-      }
-    }
-    false
+  private def appendTopicDescriptorToBuffer(topicDescriptor: TopicDescriptor): ListBuffer[TopicDescriptor] = {
+    topicDescriptors += topicDescriptor
   }
 
   // Overriding postRestart to disable the call to preStart() after restarts
@@ -92,133 +74,185 @@ class Conversation(senderId: String, topicDescriptorTypes: List[TopicDescriptorT
     case HandleMessage(text) =>
       engine ! MessageProcessed(text, senderId)
 
-    case text: String =>
-      val translateFuture = translator ? text
-      translateFuture.onComplete {
-        case Success(translatedText: String) =>
-          //    println("Translated text: " + translatedText)
-          findAndSwitchHandlingTopic(translatedText)
-        case Failure(fail) => //println("Could not translate text : " + fail.getMessage)
-      }
+    case untranslatedText: String =>
+      askTranslatorForTranslation(untranslatedText)
 
-    case topicDescriptorType: TopicDescriptorType =>
-      try {
-        addFront(topicDescriptorType.topicClass, topicDescriptorType.isStatic)
-      } catch {
-        case illegalArgumentException: IllegalArgumentException =>
-          illegalArgumentException.printStackTrace()
-      }
+    case topicToPrepend: TopicDescriptorType =>
+      val topicDescriptor = initializeTopicDescriptor(topicToPrepend.topicClass, topicToPrepend.isStatic)
+      prependTopicDescriptorToBuffer(topicDescriptor)
+      introduceIntentDetectorToTopic(topicDescriptor.fsm, defaultIntentDetector)
 
     case exterminate: Exterminate =>
       exterminateTopic(exterminate.topic)
 
-    case subscription: Subscribe =>
-      subscribeForData(subscription.key, subscription.data, sender())
+    case Subscribe(key: String, withData: Option[SharedData]) =>
+      if (withData.nonEmpty)
+        createNewDataRecord(key, withData.get)
+      addNewSubscriberToData(sender(), key)
 
-    case unsubscribe: Unsubscribe =>
-      try {
-        unsubscribeFromData(unsubscribe.key, sender())
-      } catch {
-        case noSuchElement: NoSuchElementException => noSuchElement.printStackTrace()
-      }
+    case Unsubscribe(key: String) =>
+      unsubscribeFromData(sender(), key)
 
-    case changedData: DataChanged =>
-      changeData(changedData.key, changedData.data)
+    case DataChanged(key: String, data: SharedData) =>
+      changeData(key, data)
   }
 
-  def changeData(key: String, data: SharedData): Unit = {
-    // println("Shared data is being changed..." + " Key: " + key + " Data: " + data)
-    sharedData.get(key) match {
+  private def initializeTopicDescriptor(topicClass: Class[_ <: Topic], isStatic: Boolean): TopicDescriptor = {
+    if (sameTypeTopicExists(topicClass)) {
+      throw new IllegalArgumentException("Topic of same type already exist!")
+    }
+    val topicActor = initialiseTopicActor(topicClass)
+    createTopicDescriptor(topicActor, isStatic)
+  }
+
+  private def createTopicDescriptor(topicFSM: ActorRef, isStatic: Boolean): TopicDescriptor = {
+    TopicDescriptor(topicFSM, isStatic)
+  }
+
+  private def initialiseTopicActor(topicClass: Class[_ <: Topic]): ActorRef = {
+    val topicActor = context.actorOf(Topic.props(topicClass), topicClass.getSimpleName)
+    context.watch(topicActor)
+    topicActor
+  }
+
+  private def sameTypeTopicExists(topicClass: Class[_ <: Topic]): Boolean = {
+    for (topicDescriptor <- topicDescriptors) {
+      if (topicDescriptor.fsm.path.name.equals(topicClass.getSimpleName)) {
+        return true
+      }
+    }
+    false
+  }
+
+  private def introduceIntentDetectorToTopic(topicFSM: ActorRef, intentDetector: ActorRef): Unit = {
+    topicFSM ! IntroduceIntentDetector(intentDetector)
+  }
+
+  private def prependTopicDescriptorToBuffer(topicDescriptor: TopicDescriptor): ListBuffer[TopicDescriptor] = {
+    topicDescriptors.+=:(topicDescriptor)
+
+  }
+
+  private def askTranslatorForTranslation(text: String): Unit = {
+    val translateFuture = translator ? text
+    translateFuture.onComplete {
+      case Success(translatedText: String) =>
+        findAndSwitchHandlingTopic(translatedText)
+      case Failure(fail) =>
+    }
+  }
+
+  private def findAndSwitchHandlingTopic(text: String): Unit = {
+    println("Conversation received text to handle: " + text)
+    try {
+      for (topicIndex: Int <- topicDescriptors.indices) {
+        val currentTopicDescriptor = topicDescriptors(topicIndex)
+        if (canTopicFSMHandleMessage(currentTopicDescriptor.fsm, text)) {
+          if (topicIndex > 0)
+            bringTopicDescriptorToFrontIfNotStatic(currentTopicDescriptor)
+          return
+        }
+      }
+      sendClearCacheMessageToTopicFSM()
+    }
+    catch {
+      case exception: Exception =>
+        exception.printStackTrace()
+    }
+  }
+
+
+  private def canTopicFSMHandleMessage(topicFSM: ActorRef, text: String): Boolean = {
+    val topicResponseFuture = Patterns.ask(topicFSM, HandleMessage(text), timeout.duration)
+    val isHandled = Await.result(topicResponseFuture, timeout.duration).asInstanceOf[Boolean]
+    println("Is message handled from topic " + topicFSM.path.name + " ? " + isHandled)
+    isHandled
+  }
+
+  private def bringTopicDescriptorToFrontIfNotStatic(topicDescriptor: TopicDescriptor): ListBuffer[TopicDescriptor] = {
+    if (!topicDescriptor.isStatic) {
+      topicDescriptors.-=(topicDescriptor)
+      topicDescriptors.+=:(topicDescriptor)
+    }
+    topicDescriptors
+  }
+
+  private def sendClearCacheMessageToTopicFSM(): Unit = {
+    for (topicIndex: Int <- topicDescriptors.indices) {
+      val topicDescriptor = topicDescriptors(topicIndex)
+      topicDescriptor.fsm ! ClearCache
+    }
+  }
+
+
+  private def changeData(key: String, data: SharedData): Unit = {
+    extractDataAndSubscribers(key) match {
       case Some(dataAndSubscribers) =>
         dataAndSubscribers.optionalData = Some(data)
         notifySubscribersDataChanged(key, data, dataAndSubscribers.subscribers)
       case None =>
-        sharedData.+=(key -> DataAndSubscribers(Some(data), ListBuffer.empty))
+        createNewDataRecord(key, data)
     }
   }
 
-  def notifySubscribersDataChanged(key: String, data: SharedData, subscribers: ListBuffer[ActorRef]): Unit = {
-    println("Notify subscribers data changed... " + subscribers)
+  private def notifySubscribersDataChanged(key: String, data: SharedData, subscribers: ListBuffer[ActorRef]): Unit = {
     subscribers.foreach(subscriber =>
       subscriber ! DataChanged(key, data)
     )
   }
 
-  def subscribeForData(key: String, data: Option[SharedData], subscriber: ActorRef): Unit = {
-    println(subscriber + " Subscribed for changes in data - key : " + key + " data : " + data)
-    sharedData.get(key) match {
+  private def createNewDataRecord(key: String, data: SharedData): mutable.Map[String, DataAndSubscribers] = {
+    sharedData.+=(key -> DataAndSubscribers(Some(data), ListBuffer.empty))
+  }
+
+  private def addNewSubscriberToData(subscriber: ActorRef, key: String): ListBuffer[ActorRef] = {
+    extractDataAndSubscribers(key) match {
       case Some(dataAndSubscribers) =>
         dataAndSubscribers.subscribers.+=:(subscriber)
       case None =>
-        sharedData.+=(key -> DataAndSubscribers(data, ListBuffer(subscriber)))
+        throw new NoSuchElementException("There was no such data type to subscribe to!")
     }
   }
 
-  def unsubscribeFromData(key: String, subscriber: ActorRef): Unit = {
+  private def extractDataAndSubscribers(key: String): Option[DataAndSubscribers] = {
     sharedData.get(key) match {
       case Some(dataAndSubscribers) =>
-        if (dataAndSubscribers.subscribers.contains(subscriber)) {
-          dataAndSubscribers.subscribers.-=(subscriber)
+        Some(dataAndSubscribers)
+      case None => None
+    }
+  }
+
+  private def unsubscribeFromData(subscribedActor: ActorRef, key: String): Unit = {
+    extractDataAndSubscribers(key) match {
+      case Some(dataAndSubscribers) =>
+        if (dataAndSubscribers.subscribers.contains(subscribedActor)) {
+          dataAndSubscribers.subscribers.-=(subscribedActor)
         } else {
           throw new NoSuchElementException("Topic is not subscribed.")
         }
       case None =>
-        throw new NoSuchElementException("Data not found.")
     }
   }
 
-  def addFront(topicClass: Class[_ <: Topic], isStatic: Boolean): Unit = {
-    if (sameTypeTopicExists(topicClass)) {
-      println("Topic class EXIST!!!!!!!!!!!!!!!!!!!!!")
-      throw new IllegalArgumentException("Topic of same type already exist!")
-    }
-    val topicActor = context.actorOf(Topic.props(topicClass), topicClass.getSimpleName)
-    println(topicActor.path + " created")
-    context.watch(topicActor)
-    topicDescriptors.+=:(TopicDescriptor(topicActor, isStatic))
-    introduceToTopic(topicActor, defaultIntentDetector)
-  }
-
-  def exterminateTopic(topic: ActorRef): Unit = {
+  private def exterminateTopic(topic: ActorRef): Unit = {
     for (currentTopicDescriptor <- topicDescriptors) {
       if (currentTopicDescriptor.fsm.equals(topic)) {
         println("Topic is being exterminated" + currentTopicDescriptor.fsm)
-        context.unwatch(currentTopicDescriptor.fsm)
-        currentTopicDescriptor.fsm ! PoisonPill
-        topicDescriptors.-=(currentTopicDescriptor)
+        killActor(currentTopicDescriptor.fsm)
+        removeTopicDescriptorFromBuffer(currentTopicDescriptor)
         return
       }
     }
   }
 
-  def findAndSwitchHandlingTopic(text: String): Unit = {
-    println("Conversation received text to handle: " + text)
+  private def removeTopicDescriptorFromBuffer(topicDescriptor: TopicDescriptor): ListBuffer[TopicDescriptor] = {
+    topicDescriptors.-=(topicDescriptor)
+  }
 
-    try {
-      for (topicIndex: Int <- topicDescriptors.indices) {
-        val topicDescriptor = topicDescriptors(topicIndex)
-        //println("Descriptor trying to handle message: " + topicDescriptor.fsm.path)
-        val topicResponseFuture = Patterns.ask(topicDescriptor.fsm, HandleMessage(text), timeout.duration)
-        val isHandled: Boolean = Await.result(topicResponseFuture, timeout.duration).asInstanceOf[Boolean]
-        println("Is message handled from topic " + topicDescriptor.fsm.path.name + " ? " + isHandled)
-        if (isHandled) {
-          if (topicIndex > 0 && !topicDescriptor.isStatic) {
-            topicDescriptors.-=(topicDescriptor)
-            topicDescriptors.+=:(topicDescriptor)
-            // println("Order of topics is changed to: " + topicDescriptors)
-          }
-          return
-        }
-      }
-    }
-    catch {
-      case timeOutException: TimeoutException =>
-        timeOutException.printStackTrace()
-    }
-    for (topicIndex: Int <- topicDescriptors.indices) {
-      val topicDescriptor = topicDescriptors(topicIndex)
-      topicDescriptor.fsm ! ClearCache
-    }
+  private def killActor(actorRef: ActorRef): ActorRef = {
+    context.unwatch(actorRef)
+    actorRef ! PoisonPill
+    actorRef
   }
 }
 
@@ -227,20 +261,32 @@ object Conversation {
   val activeConversations: ListBuffer[ActorRef] = new ListBuffer[ActorRef]()
 
   def getOrCreate(senderId: String)(implicit conversationParams: ConversationParams): ActorRef = {
-    //println("Active conversations are: " + activeConversations)
+    searchForExistingConversationActor(senderId) match {
+      case Some(conversationFound) => conversationFound
+      case None => createActiveConversation(senderId, conversationParams)
+    }
+  }
+
+  private def searchForExistingConversationActor(senderId: String): Option[ActorRef] = {
     for (conversationIndex <- activeConversations.indices) {
       val currentConversation = activeConversations(conversationIndex)
       if (currentConversation.path.name.equals(senderId)) {
-        //  println("found conversation for sender id: " + senderId)
-        if (activeConversations.lengthCompare(1) > 0) {
-          activeConversations.-=(currentConversation)
-          activeConversations.+=:(currentConversation)
-          //  println("Active conversations changed: " + activeConversations)
-        }
-        return currentConversation
+        sendConversationActorToFrontIfOthersExist(currentConversation)
+        return Some(currentConversation)
       }
     }
-    // println("No conversation for sender id and creating new... " + senderId)
+    None
+  }
+
+  private def sendConversationActorToFrontIfOthersExist(conversationActor: ActorRef): ListBuffer[ActorRef] = {
+    if (activeConversations.lengthCompare(1) > 0) {
+      activeConversations.-=(conversationActor)
+      activeConversations.+=:(conversationActor)
+    }
+    activeConversations
+  }
+
+  private def createActiveConversation(senderId: String, conversationParams: ConversationParams): ActorRef = {
     val descriptorTypes = conversationParams.descriptorTypes
     val system = conversationParams.system
     val newConversation = system.actorOf(props(senderId, descriptorTypes, conversationParams), senderId)
@@ -265,7 +311,7 @@ case class Exterminate(topic: ActorRef)
 
 trait SharedData
 
-case class Subscribe(key: String, data: Option[SharedData] = None)
+case class Subscribe(key: String, withData: Option[SharedData] = None)
 
 case class Unsubscribe(key: String)
 

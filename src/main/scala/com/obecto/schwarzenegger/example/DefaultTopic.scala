@@ -21,7 +21,7 @@ class DefaultTopic extends Topic {
   when(Waiting) {
     receiveEvent andThen {
       _ =>
-        sendTextResponse("Sorry, I can't answer. DefaultTopic")
+        sendTextResponseAndRegisterMessageHandled("Sorry, I can't answer. DefaultTopic")
         stay()
     }
   }
